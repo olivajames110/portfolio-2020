@@ -1,0 +1,10 @@
+main {
+  background-color: #ffffff;
+}
+
+main .main-wrapper {
+  max-width: var(--pageMaxWidth);
+  margin: 0 auto;
+  padding: 80px 1em;
+}
+/*# sourceMappingURL=Main.css.map */
