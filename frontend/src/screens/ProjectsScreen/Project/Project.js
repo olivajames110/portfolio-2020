@@ -77,20 +77,22 @@ const ProjectItemCardItem = (props) => {
 								<Arrow />
 							</span>
 						</div>
-						<div className="details-content">
-							<div className="details-content_row">
-								<h4>Background</h4>
-								<span>{description}</span>
+						{isOpen && (
+							<div className="details-content">
+								<div className="details-content_row">
+									<h4>Background</h4>
+									<span>{description}</span>
+								</div>
+								<div className={`details-content_row  `}>
+									<h4>Languages</h4>
+									<span>{props.languages}</span>
+								</div>
+								<div className={`details-content_row  `}>
+									<h4>Frameworks</h4>
+									<span>{props.frameworks}</span>
+								</div>
 							</div>
-							<div className={`details-content_row  `}>
-								<h4>Languages</h4>
-								<span>{props.languages}</span>
-							</div>
-							<div className={`details-content_row  `}>
-								<h4>Frameworks</h4>
-								<span>{props.frameworks}</span>
-							</div>
-						</div>
+						)}
 					</div>
 				</Card>
 			</li>
