@@ -1,0 +1,253 @@
+.project-item-container {
+  width: 100%;
+  font-size: 12px;
+}
+
+.project-item-container .card {
+  position: relative;
+  overflow: unset;
+  padding: 0 !important;
+  border-radius: 16px !important;
+}
+
+.project-item-container .icon-container {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #222222;
+  border-radius: 16px;
+}
+
+.project-item-container .icon-container button {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.project-item-container .icon-container svg {
+  cursor: pointer;
+  height: 18px;
+  color: #ffffff;
+}
+
+.project-item-container .icon-container svg path {
+  stroke: #313131;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+
+.project-item-container .icon-container .icon-item-wrapper {
+  padding: 0 9px;
+  /* background: red; */
+  padding-top: 6px;
+  /* border-radius: 16px; */
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000063), to(#00000024));
+  background: linear-gradient(180deg, #00000063, #00000024);
+  margin: 0 0px;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
+.project-item-container .icon-container .icon-item-wrapper:hover {
+  background-color: #00000072;
+}
+
+.project-item-container .icon-container .icon-item-wrapper:nth-child(1) {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.project-item-container .icon-container .icon-item-wrapper:nth-child(3) {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.project-item-container .project-item__image {
+  position: relative;
+}
+
+.project-item-container .project-item__image .img-wrapper {
+  height: 100%;
+  height: 210px;
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.project-item-container .project-item__image .img-wrapper img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.project-item-container .project-item__image .featured {
+  height: 350px !important;
+}
+
+.project-item-container .project-item__image .project-item__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000063), to(#00000024));
+  background: linear-gradient(180deg, #00000063, #00000024);
+  color: #222222;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  height: 100%;
+}
+
+.project-item-container .project-item__image .project-item__info span,
+.project-item-container .project-item__image .project-item__info h2 {
+  text-shadow: 0px 0px 6px #00000080;
+  color: #ffffff;
+  position: relative;
+}
+
+.project-item-container .project-item__image .project-item__info span {
+  font-size: 13px;
+}
+
+.project-item-container .project-item__image .project-item__info h2 {
+  margin-bottom: 0;
+}
+
+.project-item-container .project-item__image .project-item__info h2 span {
+  font-size: 15px;
+}
+
+.project-item-container .project-item__image .project-item__info .info-field span {
+  position: relative;
+}
+
+.project-item-container .project-item__image .project-item__info .info-field span form {
+  position: relative;
+  padding: 1px 0;
+}
+
+.project-item-container .project-item__image .project-item__info .info-field span form button {
+  top: 0;
+  position: absolute;
+  right: 22px;
+}
+
+.project-item-container .project-item__image .project-item__info .info-field span input,
+.project-item-container .project-item__image .project-item__info .info-field span textarea {
+  font-weight: inherit;
+  font-size: inherit;
+  text-shadow: 0px 0px 10px #000000;
+  color: inherit;
+  font-style: inherit;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline: 0px solid transparent;
+  padding: 0;
+}
+
+.project-item-container .project-item__image .project-item__info .info-field span .form-control {
+  margin: 0;
+}
+
+.project-item-container .project-item__image .project-item__info .info-field span .form-control label:after {
+  content: unset;
+}
+
+.project-item-container .project-item__details {
+  position: relative;
+  padding: 15px;
+  display: block;
+  height: 60px;
+  overflow: hidden;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+  cursor: pointer;
+  border-top: 1px solid var(--borderColor);
+}
+
+.project-item-container .project-item__details.details-open {
+  height: auto !important;
+}
+
+.project-item-container .project-item__details button {
+  background: none;
+}
+
+.project-item-container .project-item__details .details_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-item-container .project-item__details h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.project-item-container .project-item__details .arrow {
+  position: absolute;
+  right: 20px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.project-item-container .project-item__details .arrow svg {
+  width: 16px;
+  margin-top: 6px;
+}
+
+.project-item-container .project-item__details .arrow-open {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.project-item-container .project-item__details .details-content_row {
+  margin-top: 15px;
+  line-height: 1.5em;
+}
+
+.project-item-container .project-item__details .details-content_row h4 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.project-item-container .item-active:after {
+  content: '';
+  width: 99%;
+  height: 99%;
+  border: 2px solid var(--blue);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 8px;
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+}
+
+@media only screen and (max-width: 650px) {
+  .project-item-wrapper {
+    padding-top: 285px !important;
+  }
+  .projects-map-wrapper {
+    height: 240px !important;
+  }
+  .project-item-container .project-item__details.details-open {
+    height: 260px !important;
+  }
+}
+/*# sourceMappingURL=Project.css.map */

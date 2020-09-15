@@ -1,0 +1,145 @@
+.modal {
+	position: fixed;
+	z-index: 100;
+	background: white;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	// min-height: 500px;
+	width: 96%;
+	border-radius: 5px;
+	overflow: hidden;
+	transition: 350ms;
+	max-width: 1500px;
+	// height: 80%;
+	// max-height: 570px;
+	&.mobile {
+		max-width: 400px;
+	}
+	&.desktop-full-screen {
+		width: 100%;
+		top: 0;
+		left: 0;
+		transform: translate(0, 0);
+		.modal__body {
+			position: relative;
+			min-height: calc(100vh - 50px);
+		}
+	}
+	z-index: 1111111111;
+	.modal__header {
+		width: 100%;
+		padding: 1rem 1rem;
+		background: linear-gradient(0, #d1d1d1, #f1f1f1);
+		color: rgb(0, 0, 0);
+		// border-top-right-radius: 5px;
+		// border-top-left-radius: 5px;
+		border-bottom: 1px solid #c2c2c2;
+		// color: #ffffff;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		p {
+			margin-top: 10px;
+		}
+
+		h3,
+		p {
+			font-size: 16px;
+		}
+
+		svg {
+			cursor: pointer;
+			height: 15px;
+		}
+		.three-btn-container {
+			position: relative;
+			display: flex;
+			.btn-circle {
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				margin: 0 5px;
+				cursor: pointer;
+			}
+			.close {
+				background-color: #ff6054;
+				border: 1px solid #f15956;
+			}
+			.middle {
+				background-color: #fbbf07;
+				border: 1px solid #eabc26;
+			}
+			.expand {
+				background-color: #17cb38;
+				border: 1px solid #2bbb53;
+			}
+		}
+		.device-switcher-container {
+			display: flex;
+			.device-switcher__icon-wrapper {
+				margin: 0 10px;
+			}
+		}
+	}
+
+	.modal__body {
+		// padding: 0.5rem;
+		position: relative;
+		min-height: 76vh;
+		iframe {
+			width: 100%;
+			height: 100%;
+			border: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.modal__footer {
+		padding: 0.5rem;
+	}
+
+	.cancel {
+		// position: absolute;
+		// top: 15px;
+		// right: 15px;
+	}
+}
+
+.fade-in-enter {
+	opacity: 0;
+	// transform: scale(0.9);
+}
+.fade-in-enter-active {
+	opacity: 1;
+	// transform: translateX(0);
+	transition: opacity 300ms, transform 300ms;
+}
+.fade-in-exit {
+	opacity: 1;
+}
+.fade-in-exit-active {
+	opacity: 0;
+	// transform: scale(0.9);
+	transition: opacity 300ms, transform 300ms;
+}
+
+@media only screen and (max-width: 965px) {
+	.modal {
+		.modal__header {
+			padding: .7em;
+		}
+
+		#preview__title {
+			font-size: 16px !important;
+			margin-bottom: 5px;
+		}
+		#preview__address {
+			font-size: 13px !important;
+		}
+	}
+}

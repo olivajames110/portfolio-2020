@@ -4,6 +4,8 @@ header {
   padding: 1em;
   -webkit-box-shadow: var(--boxShadow);
           box-shadow: var(--boxShadow);
+  z-index: 1111;
+  background: #ffffff;
 }
 
 header .header-inner-wrapper {
@@ -20,7 +22,7 @@ header .header-inner-wrapper {
   margin: 0 auto;
 }
 
-header svg {
+header .header-inner-wrapper svg {
   width: 65px;
   display: block;
 }

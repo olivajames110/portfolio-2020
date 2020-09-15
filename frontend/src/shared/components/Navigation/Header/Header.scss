@@ -3,16 +3,18 @@ header {
 	width: 100%;
 	padding: 1em;
 	box-shadow: var(--boxShadow);
+	z-index: 1111;
+	background: #ffffff;
 	.header-inner-wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		max-width: var(--pageMaxWidth);
 		margin: 0 auto;
-	}
-	svg {
-		width: 65px;
-		display: block;
+		svg {
+			width: 65px;
+			display: block;
+		}
 	}
 
 	.sidedrawer-toggle-button {
