@@ -168,6 +168,9 @@
 		// justify-content: space-between;
 		// align-items: center;
 		border-top: 1px solid var(--borderColor);
+		background-color: white;
+		border-bottom-right-radius: 16px;
+		border-bottom-left-radius: 16px;
 
 		&.details-open {
 			// height: 245px !important;
@@ -234,13 +237,12 @@
 }
 
 @media only screen and (max-width: 650px) {
-	.project-item-wrapper {
-		padding-top: 285px !important;
+	.project-item-container .project-item__image .featured {
+		&.img-wrapper {
+			height: 200px !important;
+		}
 	}
-	.projects-map-wrapper {
-		height: 240px !important;
-	}
-	.project-item-container .project-item__details.details-open {
-		height: 260px !important;
+	.project-item-container .project-item__image .img-wrapper {
+		height: 165px !important;
 	}
 }

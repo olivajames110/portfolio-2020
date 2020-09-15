@@ -3,7 +3,15 @@ main {
 	.main-wrapper {
 		max-width: var(--pageMaxWidth);
 		margin: 0 auto;
-		padding: 80px 1em;
+		// padding: 80px 2.2em;
+		padding: 80px 0;
+	}
+
+	section {
+		padding: 0 2em;
+	}
+	.no-padding {
+		padding: 0 !important;
 	}
 }
 

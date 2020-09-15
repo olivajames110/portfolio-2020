@@ -11,13 +11,11 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 22px;
+  gap: 14px;
 }
 
 .featured-project__secondary .project-item-container {
-  margin-top: 22px;
+  margin-top: 18px;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   -webkit-box-flex: 1;
