@@ -15,8 +15,9 @@
   z-index: 1111111111;
 }
 
-.modal.mobile {
-  width: 400px;
+.modal.mobile .btn-circle {
+  width: 18px !important;
+  height: 18px !important;
 }
 
 .modal.desktop-full-screen {
@@ -110,6 +111,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: var(--blueText);
+  width: 100%;
 }
 
 .modal .modal__header .title-container h3 {
@@ -138,6 +140,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1111;
 }
 
 .modal .modal__header .three-btn-container .btn-circle {

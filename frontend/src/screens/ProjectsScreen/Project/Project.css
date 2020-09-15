@@ -57,6 +57,7 @@
 }
 
 .project-item-container .icon-container .icon-item-wrapper:nth-child(1) {
+  padding-left: 15px;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
 }
@@ -64,6 +65,7 @@
 .project-item-container .icon-container .icon-item-wrapper#code-icon {
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
+  padding-right: 15px;
 }
 
 .project-item-container .project-item__image {
