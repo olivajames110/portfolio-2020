@@ -90,27 +90,35 @@
   margin-top: 10px;
 }
 
-.modal .modal__header h3 {
+.modal .modal__header .title-container {
   position: absolute;
   left: 50%;
-  top: 3px;
+  top: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   text-align: center;
+  padding: 0 17px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--blueText);
+}
+
+.modal .modal__header .title-container h3 {
   font-weight: bold;
-  padding: 5px 17px;
   font-size: 14px !important;
 }
 
-.modal .modal__header .view-live-wrapper {
-  position: absolute;
-  color: var(--blueText);
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+.modal .modal__header .title-container .view-live-wrapper {
+  margin-top: -4px;
   font-size: 11px;
   text-decoration: none;
 }
@@ -190,6 +198,7 @@
   position: relative;
   min-height: 76vh;
   height: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal .modal__body iframe {

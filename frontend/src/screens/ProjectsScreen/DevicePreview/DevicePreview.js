@@ -35,11 +35,13 @@ const DevicePreviewOverlay = (props) => {
 					/>
 					<div onClick={() => setIsFullScreen((prev) => !prev)} class="btn-circle expand" />
 				</div>
-				<h3>{project.title}</h3>
-				<div className="view-live-wrapper">
-					<a href={project.url} target="_blank" rel="noopener noreferrer">
-						(View Project Live)
-					</a>
+				<div className="title-container">
+					<h3>{project.title}</h3>
+					<div className="view-live-wrapper">
+						<a href={project.url} target="_blank" rel="noopener noreferrer">
+							(View Project Live)
+						</a>
+					</div>
 				</div>
 				<div className="device-switcher-container">
 					{!isMobile && (
