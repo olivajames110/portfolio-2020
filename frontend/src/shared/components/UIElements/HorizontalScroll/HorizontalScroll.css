@@ -9,4 +9,12 @@
   padding-left: 2em;
   padding-bottom: 15px;
 }
+
+.horizontal-scroll-container .project-item-container {
+  margin-right: 10px;
+}
+
+.horizontal-scroll-container .project-item-container .project-item__details {
+  height: 55px;
+}
 /*# sourceMappingURL=HorizontalScroll.css.map */

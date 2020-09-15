@@ -5,4 +5,10 @@
 	gap: 12px;
 	padding-left: 2em;
 	padding-bottom: 15px;
+	.project-item-container {
+		margin-right: 10px;
+		.project-item__details {
+			height: 55px;
+		}
+	}
 }
