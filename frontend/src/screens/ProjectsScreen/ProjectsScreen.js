@@ -38,7 +38,7 @@ const ProjectsScreen = () => {
 				<div className="featured-project__secondary">
 					<Project
 						image={'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674267.png'}
-						title={'Online Ordering Price Comparison'}
+						title={'Online Ordering Comparison'}
 						description={'Create an account and store your favorite locations or places you have visited.'}
 						languages={'HTML, CSS, Javascript, Node JS, Mongo DB, Google API'}
 						frameworks={'SASS, React JS, Express, Mongoose'}

@@ -6,35 +6,70 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 96%;
+  width: 80%;
+  height: 90vh;
   border-radius: 5px;
   overflow: hidden;
-  -webkit-transition: 350ms;
-  transition: 350ms;
-  max-width: 1500px;
+  -webkit-transition: 480ms ease;
+  transition: 480ms ease;
   z-index: 1111111111;
 }
 
 .modal.mobile {
-  max-width: 400px;
+  width: 400px;
 }
 
 .modal.desktop-full-screen {
   width: 100%;
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  height: 100vh;
+}
+
+.modal.desktop-full-screen .circle-inactive {
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+  background: #fbbf07 !important;
+  border: 1px solid #eabc26 !important;
+}
+
+.modal.desktop-full-screen .expand {
+  position: relative;
+}
+
+.modal.desktop-full-screen .expand:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 2px;
+  right: 0px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid rgba(80, 80, 80, 0.385);
+}
+
+.modal.desktop-full-screen .expand:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 2px;
+  left: 0px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid rgba(80, 80, 80, 0.385);
 }
 
 .modal.desktop-full-screen .modal__body {
   position: relative;
-  min-height: calc(100vh - 50px);
 }
 
 .modal .modal__header {
   width: 100%;
-  padding: 1rem 1rem;
+  padding: 1rem .5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#d1d1d1), to(#f1f1f1));
   background: linear-gradient(0, #d1d1d1, #f1f1f1);
   color: black;
@@ -55,6 +90,31 @@
   margin-top: 10px;
 }
 
+.modal .modal__header h3 {
+  position: absolute;
+  left: 50%;
+  top: 3px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  color: var(--blueText);
+  font-weight: bold;
+  padding: 5px 17px;
+  font-size: 14px !important;
+}
+
+.modal .modal__header .view-live-wrapper {
+  position: absolute;
+  color: var(--blueText);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 11px;
+  text-decoration: none;
+}
+
 .modal .modal__header h3,
 .modal .modal__header p {
   font-size: 16px;
@@ -73,8 +133,8 @@
 }
 
 .modal .modal__header .three-btn-container .btn-circle {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
@@ -86,8 +146,11 @@
 }
 
 .modal .modal__header .three-btn-container .middle {
-  background-color: #fbbf07;
-  border: 1px solid #eabc26;
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#d1d1d1), to(#f1f1f1));
+  background: linear-gradient(0, #d1d1d1, #f1f1f1);
+  border: none;
+  -webkit-box-shadow: inset 0px 0px 2px 1px #0000002b;
+          box-shadow: inset 0px 0px 2px 1px #0000002b;
 }
 
 .modal .modal__header .three-btn-container .expand {
@@ -102,12 +165,31 @@
 }
 
 .modal .modal__header .device-switcher-container .device-switcher__icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 10px;
+  position: relative;
+}
+
+.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active {
+  color: var(--blueText);
+}
+
+.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  background-color: var(--blueText);
+  width: 100%;
+  height: 2px;
+  left: 0;
 }
 
 .modal .modal__body {
   position: relative;
   min-height: 76vh;
+  height: 100%;
 }
 
 .modal .modal__body iframe {
@@ -148,15 +230,8 @@
 }
 
 @media only screen and (max-width: 965px) {
-  .modal .modal__header {
-    padding: .7em;
-  }
-  .modal #preview__title {
-    font-size: 16px !important;
-    margin-bottom: 5px;
-  }
-  .modal #preview__address {
-    font-size: 13px !important;
+  .modal {
+    width: 94%;
   }
 }
 /*# sourceMappingURL=DevicePreview.css.map */

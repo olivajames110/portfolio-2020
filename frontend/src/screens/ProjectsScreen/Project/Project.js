@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './Project.css';
 import Card from '../../../shared/components/UIElements/Card/Card';
 // import Button from '../../../shared/components/FormElements/Button/Button';
-
+import { isMobile } from 'react-device-detect';
 import { ReactComponent as Desktop } from '../../../shared/icons/desktop.svg';
 import { ReactComponent as Mobile } from '../../../shared/icons/mobile.svg';
 import { ReactComponent as Code } from '../../../shared/icons/sourceCode.svg';
@@ -40,13 +40,27 @@ const ProjectItemCardItem = (props) => {
 						</div>
 
 						<div className="icon-container">
-							<div onClick={() => props.handleProjectPreview(title, url)} className="icon-item-wrapper">
-								<Desktop />
-							</div>
-							<div onClick={() => props.handleProjectPreview(title, url)} className="icon-item-wrapper">
+							{!isMobile && (
+								<div
+									onClick={() => props.handleProjectPreview(title, url)}
+									id="desktop-icon"
+									className="icon-item-wrapper"
+								>
+									<Desktop />
+								</div>
+							)}
+							<div
+								onClick={() => props.handleProjectPreview(title, url)}
+								id="mobile-icon"
+								className="icon-item-wrapper"
+							>
 								<Mobile />
 							</div>
-							<div onClick={() => props.handleProjectPreview(title, url)} className="icon-item-wrapper">
+							<div
+								onClick={() => props.handleProjectPreview(title, url)}
+								id="code-icon"
+								className="icon-item-wrapper"
+							>
 								<a href={props.github} target="_blank" rel="noopener noreferrer">
 									<Code />
 								</a>

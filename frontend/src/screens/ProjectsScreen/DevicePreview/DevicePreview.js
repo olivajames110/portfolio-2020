@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import { isMobile } from 'react-device-detect';
 import { CSSTransition } from 'react-transition-group';
 import Backdrop from '../../../shared/components/UIElements/Backdrop/Backdrop';
 import { ReactComponent as Desktop } from '../../../shared/icons/desktop.svg';
@@ -10,29 +11,55 @@ import './DevicePreview.css';
 
 const DevicePreviewOverlay = (props) => {
 	const { className, style, headerClass, header, onSubmit, contentClass, footer, footerClass, project } = props;
-	const [ isMobile, setIsMobile ] = useState(false);
+	const [ previewIsMobile, setPreviewIsMobile ] = useState(false);
 	const [ isFullScreen, setIsFullScreen ] = useState(false);
+	useEffect(() => {
+		if (isMobile) {
+			console.log('yes', isMobile);
+		} else {
+			console.log('no', isMobile);
+		}
+	}, []);
+
 	const content = (
-		<div className={`modal ${isMobile && 'mobile'} || ${isFullScreen && 'desktop-full-screen'}`} style={style}>
+		<div
+			className={`modal ${previewIsMobile && 'mobile'} || ${isFullScreen && 'desktop-full-screen'}`}
+			style={style}
+		>
 			<header className={`modal__header ${headerClass}`}>
 				<div class="three-btn-container">
 					<div onClick={props.onCancel} class="btn-circle close" />
-					<div onClick={() => setIsFullScreen(false)} class="btn-circle middle" />
+					<div
+						onClick={() => setIsFullScreen(false)}
+						class={`btn-circle middle ${isFullScreen && 'circle-inactive'}`}
+					/>
 					<div onClick={() => setIsFullScreen((prev) => !prev)} class="btn-circle expand" />
 				</div>
 				<h3>{project.title}</h3>
+				<div className="view-live-wrapper">
+					<a href={project.url} target="_blank" rel="noopener noreferrer">
+						(View Project Live)
+					</a>
+				</div>
 				<div className="device-switcher-container">
-					<div onClick={() => setIsMobile(false)} className="device-switcher__icon-wrapper">
-						<Desktop />
-					</div>
-					<div onClick={() => setIsMobile(true)} className="device-switcher__icon-wrapper">
-						<Mobile />
-					</div>
+					{!isMobile && (
+						<React.Fragment>
+							<div
+								onClick={() => setPreviewIsMobile(false)}
+								className={`device-switcher__icon-wrapper ${!previewIsMobile && 'icon-active'}`}
+							>
+								<Desktop />
+							</div>
+							<div
+								onClick={() => setPreviewIsMobile(true)}
+								className={`device-switcher__icon-wrapper ${previewIsMobile && 'icon-active'}`}
+							>
+								<Mobile />
+							</div>
+						</React.Fragment>
+					)}
 					<div className="device-switcher__icon-wrapper">
 						<Code />
-					</div>
-					<div onClick={props.onCancel} className="device-switcher__icon-wrapper cancel">
-						<Cross />
 					</div>
 				</div>
 			</header>
