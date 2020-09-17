@@ -21,11 +21,23 @@ const DevicePreviewOverlay = (props) => {
 		}
 	}, []);
 
+	const mobilePreviewHandler = () => {
+		setIsFullScreen(false);
+		setPreviewIsMobile(true);
+	};
+
+	const desktopPreviewHandler = () => {
+		setIsFullScreen(false);
+		setPreviewIsMobile(true);
+	};
+
+	const fullScreenPreviewHandler = () => {
+		setIsFullScreen((p) => !p);
+		setPreviewIsMobile(false);
+	};
+
 	const content = (
-		<div
-			className={`modal ${!previewIsMobile && 'mobile'}  ${isFullScreen && 'desktop-full-screen'}`}
-			style={style}
-		>
+		<div className={`modal ${previewIsMobile && 'mobile'}  ${isFullScreen && 'desktop-full-screen'}`} style={style}>
 			<header className={`modal__header ${headerClass}`}>
 				<div class="three-btn-container">
 					<div onClick={props.onCancel} class="btn-circle close" />
@@ -35,7 +47,7 @@ const DevicePreviewOverlay = (props) => {
 								onClick={() => setIsFullScreen(false)}
 								class={`btn-circle middle ${isFullScreen && 'circle-inactive'}`}
 							/>
-							<div onClick={() => setIsFullScreen((prev) => !prev)} class="btn-circle expand" />
+							<div onClick={fullScreenPreviewHandler} class="btn-circle expand" />
 						</React.Fragment>
 					)}
 				</div>
@@ -57,7 +69,7 @@ const DevicePreviewOverlay = (props) => {
 								<Desktop />
 							</div>
 							<div
-								onClick={() => setPreviewIsMobile(true)}
+								onClick={mobilePreviewHandler}
 								className={`device-switcher__icon-wrapper ${previewIsMobile && 'icon-active'}`}
 							>
 								<Mobile />

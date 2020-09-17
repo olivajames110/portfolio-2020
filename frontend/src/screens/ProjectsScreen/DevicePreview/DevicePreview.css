@@ -15,6 +15,10 @@
   z-index: 1111111111;
 }
 
+.modal.mobile {
+  width: 400px;
+}
+
 .modal.mobile .btn-circle {
   width: 18px !important;
   height: 18px !important;

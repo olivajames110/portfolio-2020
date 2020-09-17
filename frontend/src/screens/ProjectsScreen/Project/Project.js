@@ -6,6 +6,7 @@ import { isMobile } from 'react-device-detect';
 import { ReactComponent as Desktop } from '../../../shared/icons/desktop.svg';
 import { ReactComponent as Mobile } from '../../../shared/icons/mobile.svg';
 import { ReactComponent as Code } from '../../../shared/icons/sourceCode.svg';
+import { ReactComponent as Eye } from '../../../shared/icons/eye.svg';
 import { ReactComponent as Arrow } from '../../../shared/icons/arrow.svg';
 // import Card from '../../../../../shared/components/UIElements/Card/Card';
 // import LoadingSpinner from '../../../../../shared/components/UIElements/LoadingSpinner/LoadingSpinner';
@@ -43,19 +44,13 @@ const ProjectItemCardItem = (props) => {
 							{!isMobile && (
 								<div
 									onClick={() => props.handleProjectPreview(title, url)}
-									id="desktop-icon"
+									id="view-icon"
 									className="icon-item-wrapper"
 								>
-									<Desktop />
+									<Eye />
 								</div>
 							)}
-							<div
-								onClick={() => props.handleProjectPreview(title, url)}
-								id="mobile-icon"
-								className="icon-item-wrapper"
-							>
-								<Mobile />
-							</div>
+
 							<div
 								onClick={() => props.handleProjectPreview(title, url)}
 								id="code-icon"
