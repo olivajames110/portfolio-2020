@@ -4,11 +4,14 @@ import HorizontalScroll from '../../shared/components/UIElements/HorizontalScrol
 import Project from './Project/Project';
 import { isMobile } from 'react-device-detect';
 import DevicePreview from './DevicePreview/DevicePreview';
+import ProjectSwitcher from './ProjectSwitcher/ProjectSwitcher';
+import { projectData } from './ProjectData';
 
 import './ProjectsScreen.css';
 
 const ProjectsScreen = () => {
 	const [ projectPreview, setProjectPreview ] = useState(false);
+	const [ projectGroup, setProjectGroup ] = useState('all');
 	const handleProjectPreview = (t, u) => {
 		console.log('preview');
 		let project = {
@@ -18,103 +21,91 @@ const ProjectsScreen = () => {
 		setProjectPreview(project);
 	};
 
-	const projectList = (
-		<div className="featured-project__secondary" style={{ padding: '0 2em' }}>
-			<Project
-				image={'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674267.png'}
-				title={'Online Ordering Comparison'}
-				description={'Create an account and store your favorite locations or places you have visited.'}
-				languages={'HTML, CSS, Javascript, Node JS, Mongo DB, Google API'}
-				frameworks={'SASS, React JS, Express, Mongoose'}
-				url="https://olivajames110.github.io/online-ordering-price-comparison/"
-				github="https://github.com/olivajames110/mern"
-				handleProjectPreview={handleProjectPreview}
-			/>
-			<Project
-				image={'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674266.png'}
-				title={'FIP Cost Calculator'}
-				description={'Create an account and store your favorite locations or places you have visited.'}
-				languages={'HTML, CSS, Javascript, Node JS, Mongo DB, Google API'}
-				frameworks={'SASS, React JS, Express, Mongoose'}
-				url="https://olivajames110.github.io/fip-calculator/"
-				github="https://github.com/olivajames110/mern"
-				handleProjectPreview={handleProjectPreview}
-			/>
-			<Project
-				image={'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674271.png'}
-				title={'Millhouse Brewing'}
-				description={'Create an account and store your favorite locations or places you have visited.'}
-				languages={'HTML, CSS, Javascript, Node JS, Mongo DB, Google API'}
-				frameworks={'SASS, React JS, Express, Mongoose'}
-				url="https://olivajames110.github.io/online-ordering-price-comparison/"
-				github="https://github.com/olivajames110/mern"
-				handleProjectPreview={handleProjectPreview}
-			/>
-		</div>
-	);
-	const mobileProjectList = (
+	const allProjects = (
 		<div className="featured-project__secondary">
-			<HorizontalScroll>
-				<Project
-					image={'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674267.png'}
-					title={'Online Ordering Comparison'}
-					description={'Create an account and store your favorite locations or places you have visited.'}
-					languages={'HTML, CSS, Javascript, Node JS, Mongo DB, Google API'}
-					frameworks={'SASS, React JS, Express, Mongoose'}
-					url="https://olivajames110.github.io/online-ordering-price-comparison/"
-					github="https://github.com/olivajames110/mern"
-					handleProjectPreview={handleProjectPreview}
-				/>
-				<Project
-					image={'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674266.png'}
-					title={'FIP Cost Calculator'}
-					description={'Create an account and store your favorite locations or places you have visited.'}
-					languages={'HTML, CSS, Javascript, Node JS, Mongo DB, Google API'}
-					frameworks={'SASS, React JS, Express, Mongoose'}
-					url="https://olivajames110.github.io/fip-calculator/"
-					github="https://github.com/olivajames110/mern"
-					handleProjectPreview={handleProjectPreview}
-				/>
-				<Project
-					image={'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674271.png'}
-					title={'Millhouse Brewing'}
-					description={'Create an account and store your favorite locations or places you have visited.'}
-					languages={'HTML, CSS, Javascript, Node JS, Mongo DB, Google API'}
-					frameworks={'SASS, React JS, Express, Mongoose'}
-					url="https://olivajames110.github.io/online-ordering-price-comparison/"
-					github="https://github.com/olivajames110/mern"
-					handleProjectPreview={handleProjectPreview}
-				/>
-			</HorizontalScroll>
+			{Object.keys(projectData).map((project) => {
+				return projectData[project].map((p) => (
+					<Project
+						image={p.image}
+						title={p.title}
+						description={p.description}
+						languages={p.languages}
+						frameworks={p.frameworks}
+						url={p.url}
+						github={p.github}
+						handleProjectPreview={handleProjectPreview}
+					/>
+				));
+			})}
 		</div>
 	);
+
+	const projectList = (
+		<React.Fragment>
+			{projectGroup !== 'all' && (
+				<div className="featured-project__secondary">
+					{projectData[projectGroup].map((p) => (
+						<Project
+							image={p.image}
+							title={p.title}
+							description={p.description}
+							languages={p.languages}
+							frameworks={p.frameworks}
+							url={p.url}
+							github={p.github}
+							handleProjectPreview={handleProjectPreview}
+						/>
+					))}
+				</div>
+			)}
+		</React.Fragment>
+	);
+	// const mobileProjectList = (
+	// 	<div className="featured-project__secondary">
+	// 		<HorizontalScroll>
+	// 			{projectData[projectGroup].map((p) => (
+	// 				<Project
+	// 					image={p.image}
+	// 					title={p.title}
+	// 					description={p.description}
+	// 					languages={p.languages}
+	// 					frameworks={p.frameworks}
+	// 					url={p.url}
+	// 					github={p.github}
+	// 					handleProjectPreview={handleProjectPreview}
+	// 				/>
+	// 			))}
+	// 		</HorizontalScroll>
+	// 	</div>
+	// );
 
 	return (
 		<Main>
 			<DevicePreview show={projectPreview} onCancel={() => setProjectPreview(false)} project={projectPreview} />
 			<section className="" id="featured-projects">
-				<h1>Featured Projects</h1>
+				<h1>Featured Project</h1>
 				<div className="featured-project__primary">
 					<Project
 						featured
-						image={'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674221.png'}
-						title={'Travel Map'}
-						description={'Create an account and store your favorite locations or places you have visited.'}
-						languages={'HTML, CSS, Javascript, Node JS, Mongo DB, Google API'}
-						frameworks={'SASS, React JS, Express, Mongoose'}
-						url="https://jimmy-mern-fullstack-project.web.app/"
-						github="https://github.com/olivajames110/mern"
+						image={projectData.forfun[0].image}
+						title={projectData.forfun[0].title}
+						description={projectData.forfun[0].description}
+						languages={projectData.forfun[0].languages}
+						frameworks={projectData.forfun[0].frameworks}
+						url={projectData.forfun[0].url}
+						github={projectData.forfun[0].github}
 						handleProjectPreview={handleProjectPreview}
 					/>
 				</div>
 			</section>
-
-			{
-				!isMobile ? projectList :
-				mobileProjectList}
-
-			<section className="" id="other-projects">
+			<section>
 				<h2>Other Projects</h2>
+				<ProjectSwitcher setProjectGroup={setProjectGroup} />
+				<div className="project-list-container">
+					{
+						projectGroup === 'all' ? allProjects :
+						projectList}
+				</div>
 			</section>
 		</Main>
 	);

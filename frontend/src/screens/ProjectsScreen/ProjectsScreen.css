@@ -4,7 +4,13 @@ h1 {
 }
 
 section {
-  margin-top: 30px;
+  margin-top: 50px;
+}
+
+.project-list-container {
+  overflow: auto;
+  margin: 0 -1.5em;
+  padding-left: 1.5em;
 }
 
 .featured-project__secondary {
@@ -12,6 +18,8 @@ section {
   display: -ms-flexbox;
   display: flex;
   gap: 14px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .featured-project__secondary .project-item-container {
@@ -24,5 +32,12 @@ section {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   min-width: 280px;
+}
+
+@media only screen and (max-width: 600px) {
+  .featured-project__secondary {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 /*# sourceMappingURL=ProjectsScreen.css.map */

@@ -1,38 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { CSSTransition } from 'react-transition-group';
-import Backdrop from '../Backdrop/Backdrop';
-import { ReactComponent as Cross } from '../../../shared/icons/times.svg';
+import React, { useState, useEffect } from 'react';
+
+// import { ReactComponent as Cross } from '../../../shared/icons/times.svg';
+// import { projectData } from '../ProjectData/';
 import './ProjectSwitcher.css';
 
-const ProjectSwitcherOverlay = (props) => {
-	const { className, style, headerClass, header, onSubmit, contentClass, footer, footerClass } = props;
-
-	const content = (
-		<div className={`modal ${className}`} style={style}>
-			<header className={`modal__header ${headerClass}`}>
-				<h3>{header}</h3>
-				<div onClick={props.onCancel} className="cancel">
-					<Cross />
-				</div>
-			</header>
-			<div className="modal-body">body</div>
-		</div>
-	);
-
-	return ReactDOM.createPortal(content, document.getElementById('modal-hook'));
-};
-
 const ProjectSwitcher = (props) => {
-	const { show, onCancel } = props;
+	const [ currentCategory, setCurrentCategory ] = useState('All');
+	const categories = [ 'All', 'Websites', 'Calculators', 'For Fun' ];
 
+	const handleProjectGroupChange = (cat) => {
+		let group = cat.split(' ').join('').toLowerCase();
+		setCurrentCategory(cat);
+		console.log(group);
+		props.setProjectGroup(group);
+	};
 	return (
-		<React.Fragment>
-			{show && <Backdrop onClick={onCancel} />}
-			<CSSTransition in={show} timeout={200} classNames="fade-in" mountOnEnter unmountOnExit>
-				<ProjectSwitcherOverlay {...props} />
-			</CSSTransition>
-		</React.Fragment>
+		<div className="project-switcher-container">
+			{categories.map((cat) => (
+				<div
+					onClick={() => handleProjectGroupChange(cat)}
+					className={`category-item-wrapper ${currentCategory === cat && 'item-active'}`}
+				>
+					<button>{cat}</button>
+				</div>
+			))}
+		</div>
 	);
 };
 

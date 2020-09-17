@@ -1,1 +1,37 @@
+.project-switcher-container {
+	position: relative;
+	display: flex;
+	.category-item-wrapper {
+		padding: 5px 12px;
+		margin-right: 15px;
+		position: relative;
 
+		button {
+			background: none;
+			border: none;
+			cursor: pointer;
+			color: inherit;
+			font-weight: inherit;
+			outline: none;
+		}
+
+		&:hover {
+			color: var(--blueText);
+		}
+
+		&.item-active {
+			position: relative;
+			color: var(--blueText);
+			font-weight: 600;
+			&:after {
+				content: '';
+				width: 100%;
+				height: 2px;
+				background-color: var(--blueText);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+	}
+}
