@@ -41,15 +41,13 @@ const ProjectItemCardItem = (props) => {
 						</div>
 
 						<div className="icon-container">
-							{!isMobile && (
-								<div
-									onClick={() => props.handleProjectPreview(title, url)}
-									id="view-icon"
-									className="icon-item-wrapper"
-								>
-									<Eye />
-								</div>
-							)}
+							<div
+								onClick={() => props.handleProjectPreview(title, url)}
+								id="view-icon"
+								className="icon-item-wrapper"
+							>
+								<Eye />
+							</div>
 
 							<div
 								onClick={() => props.handleProjectPreview(title, url)}

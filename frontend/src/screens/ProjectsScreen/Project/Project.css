@@ -13,8 +13,8 @@
 .project-item-container .icon-container {
   position: absolute;
   cursor: pointer;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,8 +43,8 @@
 .project-item-container .icon-container .icon-item-wrapper {
   padding: 0 9px;
   padding-top: 6px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00000063), to(#00000024));
-  background: linear-gradient(180deg, #00000063, #00000024);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000091), to(#0000005e));
+  background: linear-gradient(180deg, #00000091, #0000005e);
   margin: 0 0px;
   -webkit-transition: 150ms;
   transition: 150ms;
