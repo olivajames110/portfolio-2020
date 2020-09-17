@@ -97,8 +97,8 @@ export const projectData = {
 		{
 			image       : 'https://digitalmarketing.blob.core.windows.net/5215/images/items/image606690.jpg',
 			title       : 'Baseball Card Builder',
-			description : 'Create an account and store your favorite locations or places you have visited.',
-			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Websocket',
+			description : 'Build your own custom baseball card.',
+			languages   : 'HTML, CSS, Javascript',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
 			url         : 'https://olivajames110.github.io/cattery',
 			github      : 'https://github.com/olivajames110/mern',
