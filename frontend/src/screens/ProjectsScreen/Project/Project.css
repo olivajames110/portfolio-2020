@@ -51,7 +51,8 @@
 }
 
 .project-item-container .icon-container .icon-item-wrapper svg path,
-.project-item-container .icon-container .icon-item-wrapper svg circle {
+.project-item-container .icon-container .icon-item-wrapper svg circle,
+.project-item-container .icon-container .icon-item-wrapper svg line {
   stroke: #ffffff !important;
 }
 
@@ -205,12 +206,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .project-item-container .project-item__details h3 {
   font-size: 16px;
   font-weight: 500;
-  margin-top: 5px;
 }
 
 .project-item-container .project-item__details .arrow {

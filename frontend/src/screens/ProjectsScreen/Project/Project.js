@@ -4,7 +4,7 @@ import Card from '../../../shared/components/UIElements/Card/Card';
 // import Button from '../../../shared/components/FormElements/Button/Button';
 import { isMobile } from 'react-device-detect';
 import { ReactComponent as Desktop } from '../../../shared/icons/desktop.svg';
-import { ReactComponent as Mobile } from '../../../shared/icons/mobile.svg';
+import { ReactComponent as Brackets } from '../../../shared/icons/brackets.svg';
 import { ReactComponent as Code } from '../../../shared/icons/sourceCode.svg';
 import { ReactComponent as Eye } from '../../../shared/icons/eye.svg';
 import { ReactComponent as Arrow } from '../../../shared/icons/arrow.svg';
@@ -55,7 +55,7 @@ const ProjectItemCardItem = (props) => {
 								className="icon-item-wrapper"
 							>
 								<a href={props.github} target="_blank" rel="noopener noreferrer">
-									<Code />
+									<Brackets />
 								</a>
 							</div>
 						</div>
