@@ -1,6 +1,5 @@
 .project-item-container {
 	width: 100%;
-	// margin: 10px;
 	font-size: 12px;
 
 	.card {
@@ -14,11 +13,7 @@
 		cursor: pointer;
 		top: 5px;
 		right: 5px;
-		// z-index: 1111;
 		display: flex;
-		// padding-top: 6px;
-		// background: linear-gradient(180deg, #00000063, #00000024);
-		// padding: 15px;
 		color: #222222;
 		border-radius: 16px;
 		button {
@@ -29,12 +24,11 @@
 
 		svg {
 			cursor: pointer;
-			height: 18px;
+			height: 14px;
 			color: #ffffff;
 			path {
 				stroke: #313131;
 				stroke-width: 4px;
-
 				stroke-linejoin: round;
 			}
 		}

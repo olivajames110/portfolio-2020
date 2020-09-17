@@ -7,7 +7,8 @@ export const projectData = {
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
 			url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
-			github      : 'https://github.com/olivajames110/mern'
+			github      : 'https://github.com/olivajames110/mern',
+			group       : 'websites'
 		},
 		{
 			image       : 'https://digitalmarketing.blob.core.windows.net/5587/images/items/image608624.jpg',
@@ -16,7 +17,8 @@ export const projectData = {
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
 			url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
-			github      : 'https://github.com/olivajames110/mern'
+			github      : 'https://github.com/olivajames110/mern',
+			group       : 'websites'
 		},
 		{
 			image       : 'https://digitalmarketing.blob.core.windows.net/5215/images/items/image606691.jpg',
@@ -25,7 +27,8 @@ export const projectData = {
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
 			url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
-			github      : 'https://github.com/olivajames110/mern'
+			github      : 'https://github.com/olivajames110/mern',
+			group       : 'websites'
 		},
 		{
 			image       : ' https://digitalmarketing.blob.core.windows.net/5587/images/items/image608625.jpg',
@@ -34,7 +37,8 @@ export const projectData = {
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
 			url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
-			github      : 'https://github.com/olivajames110/mern'
+			github      : 'https://github.com/olivajames110/mern',
+			group       : 'websites'
 		},
 		{
 			image       : 'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674270.png',
@@ -43,7 +47,8 @@ export const projectData = {
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
 			url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
-			github      : 'https://github.com/olivajames110/mern'
+			github      : 'https://github.com/olivajames110/mern',
+			group       : 'websites'
 		}
 	],
 	calculators : [
@@ -54,7 +59,8 @@ export const projectData = {
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
 			url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
-			github      : 'https://github.com/olivajames110/mern'
+			github      : 'https://github.com/olivajames110/mern',
+			group       : 'calculators'
 		},
 		{
 			image       : 'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674266.png',
@@ -63,7 +69,8 @@ export const projectData = {
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
 			url         : 'https://olivajames110.github.io/fip-calculator/',
-			github      : 'https://github.com/olivajames110/mern'
+			github      : 'https://github.com/olivajames110/mern',
+			group       : 'calculators'
 		}
 	],
 	forfun      : [
@@ -74,7 +81,8 @@ export const projectData = {
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
 			url         : 'https://jimmy-mern-fullstack-project.web.app/',
-			github      : 'https://github.com/olivajames110/mern'
+			github      : 'https://github.com/olivajames110/mern',
+			group       : 'forfun'
 		},
 		{
 			image       : 'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674650.png',
@@ -83,7 +91,8 @@ export const projectData = {
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Websocket',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
 			url         : 'https://olivajames110.github.io/cattery',
-			github      : 'https://github.com/olivajames110/mern'
+			github      : 'https://github.com/olivajames110/mern',
+			group       : 'forfun'
 		},
 		{
 			image       : 'https://digitalmarketing.blob.core.windows.net/5215/images/items/image606690.jpg',
@@ -92,7 +101,8 @@ export const projectData = {
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Websocket',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
 			url         : 'https://olivajames110.github.io/cattery',
-			github      : 'https://github.com/olivajames110/mern'
+			github      : 'https://github.com/olivajames110/mern',
+			group       : 'forfun'
 		}
 	]
 };

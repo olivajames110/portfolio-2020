@@ -19,11 +19,6 @@
   width: 35%;
 }
 
-.modal.mobile .btn-circle {
-  width: 18px !important;
-  height: 18px !important;
-}
-
 .modal.desktop-full-screen {
   width: 100%;
   height: 100vh;
@@ -136,7 +131,7 @@
 
 .modal .modal__header svg {
   cursor: pointer;
-  height: 15px;
+  height: 18px;
 }
 
 .modal .modal__header .three-btn-container {
@@ -187,11 +182,18 @@
   position: relative;
 }
 
-.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active {
+.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg {
   color: var(--blueText);
+  fill: var(--blueText);
+  stroke: var(--blueText) !important;
+  stroke: var(--blueText) !important;
 }
 
-.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active:after {
+.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg rect {
+  stroke: var(--blueText) !important;
+}
+
+.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg:after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -248,6 +250,10 @@
 @media only screen and (max-width: 965px) {
   .modal {
     width: 94%;
+  }
+  .btn-circle {
+    width: 22px !important;
+    height: 22px !important;
   }
 }
 /*# sourceMappingURL=DevicePreview.css.map */

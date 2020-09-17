@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Main from '../../shared/components/UIElements/Main/Main';
 import HorizontalScroll from '../../shared/components/UIElements/HorizontalScroll/HorizontalScroll';
 import Project from './Project/Project';
+import { sortAZ } from '../../shared/utils/sortAZ';
 import { isMobile } from 'react-device-detect';
 import DevicePreview from './DevicePreview/DevicePreview';
 import ProjectSwitcher from './ProjectSwitcher/ProjectSwitcher';
@@ -12,31 +13,42 @@ import './ProjectsScreen.css';
 const ProjectsScreen = () => {
 	const [ projectPreview, setProjectPreview ] = useState(false);
 	const [ projectGroup, setProjectGroup ] = useState('all');
-	const handleProjectPreview = (t, u) => {
+	const [ allProjectList, setAllProjectList ] = useState([]);
+
+	const handleProjectPreview = (title, url) => {
 		console.log('preview');
 		let project = {
-			title : t,
-			url   : u
+			title : title,
+			url   : url
 		};
 		setProjectPreview(project);
 	};
 
+	useEffect(() => {
+		let list = [];
+
+		Object.keys(projectData).map((project) => {
+			projectData[project].map((p) => list.push(p));
+		});
+
+		let sortedList = sortAZ(list, 'title');
+		setAllProjectList(sortedList);
+	}, []);
+
 	const allProjects = (
 		<div className="featured-project__secondary">
-			{Object.keys(projectData).map((project) => {
-				return projectData[project].map((p) => (
-					<Project
-						image={p.image}
-						title={p.title}
-						description={p.description}
-						languages={p.languages}
-						frameworks={p.frameworks}
-						url={p.url}
-						github={p.github}
-						handleProjectPreview={handleProjectPreview}
-					/>
-				));
-			})}
+			{allProjectList.map((p) => (
+				<Project
+					image={p.image}
+					title={p.title}
+					description={p.description}
+					languages={p.languages}
+					frameworks={p.frameworks}
+					url={p.url}
+					github={p.github}
+					handleProjectPreview={handleProjectPreview}
+				/>
+			))}
 		</div>
 	);
 
@@ -44,18 +56,20 @@ const ProjectsScreen = () => {
 		<React.Fragment>
 			{projectGroup !== 'all' && (
 				<div className="featured-project__secondary">
-					{projectData[projectGroup].map((p) => (
-						<Project
-							image={p.image}
-							title={p.title}
-							description={p.description}
-							languages={p.languages}
-							frameworks={p.frameworks}
-							url={p.url}
-							github={p.github}
-							handleProjectPreview={handleProjectPreview}
-						/>
-					))}
+					{allProjectList
+						.filter((p) => p.group === projectGroup)
+						.map((p) => (
+							<Project
+								image={p.image}
+								title={p.title}
+								description={p.description}
+								languages={p.languages}
+								frameworks={p.frameworks}
+								url={p.url}
+								github={p.github}
+								handleProjectPreview={handleProjectPreview}
+							/>
+						))}
 				</div>
 			)}
 		</React.Fragment>

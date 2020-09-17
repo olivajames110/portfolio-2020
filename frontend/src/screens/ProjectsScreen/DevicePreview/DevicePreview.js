@@ -5,7 +5,7 @@ import { CSSTransition } from 'react-transition-group';
 import Backdrop from '../../../shared/components/UIElements/Backdrop/Backdrop';
 import { ReactComponent as Desktop } from '../../../shared/icons/desktop.svg';
 import { ReactComponent as Mobile } from '../../../shared/icons/mobile.svg';
-import { ReactComponent as Code } from '../../../shared/icons/sourceCode.svg';
+import { ReactComponent as Brackets } from '../../../shared/icons/brackets.svg';
 import { ReactComponent as Cross } from '../../../shared/icons/times.svg';
 import './DevicePreview.css';
 
@@ -22,11 +22,6 @@ const DevicePreviewOverlay = (props) => {
 	}, []);
 
 	const mobilePreviewHandler = () => {
-		setIsFullScreen(false);
-		setPreviewIsMobile(true);
-	};
-
-	const desktopPreviewHandler = () => {
 		setIsFullScreen(false);
 		setPreviewIsMobile(true);
 	};
@@ -77,7 +72,7 @@ const DevicePreviewOverlay = (props) => {
 						</React.Fragment>
 					)}
 					<div className="device-switcher__icon-wrapper">
-						<Code />
+						<Brackets />
 					</div>
 				</div>
 			</header>

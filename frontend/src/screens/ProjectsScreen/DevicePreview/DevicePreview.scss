@@ -17,10 +17,10 @@
 	&.mobile {
 		width: 35%;
 		// width: 400px;
-		.btn-circle {
-			width: 18px !important;
-			height: 18px !important;
-		}
+		// .btn-circle {
+		// 	width: 22px !important;
+		// 	height: 22px !important;
+		// }
 	}
 	&.desktop-full-screen {
 		width: 100%;
@@ -116,7 +116,7 @@
 
 		svg {
 			cursor: pointer;
-			height: 15px;
+			height: 18px;
 		}
 		.three-btn-container {
 			position: relative;
@@ -151,8 +151,14 @@
 				display: flex;
 				margin: 0 10px;
 				position: relative;
-				&.icon-active {
+				&.icon-active svg {
 					color: var(--blueText);
+					fill: var(--blueText);
+					stroke: var(--blueText) !important;
+					stroke: var(--blueText) !important;
+					rect {
+						stroke: var(--blueText) !important;
+					}
 					&:after {
 						content: '';
 						position: absolute;
@@ -214,5 +220,10 @@
 @media only screen and (max-width: 965px) {
 	.modal {
 		width: 94%;
+	}
+
+	.btn-circle {
+		width: 22px !important;
+		height: 22px !important;
 	}
 }
