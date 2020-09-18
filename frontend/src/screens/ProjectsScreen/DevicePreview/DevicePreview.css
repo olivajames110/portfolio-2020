@@ -173,12 +173,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 28%;
+  max-width: 135px;
 }
 
 .modal .modal__header .device-switcher-container .device-switcher__icon-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 10px;
   position: relative;
 }

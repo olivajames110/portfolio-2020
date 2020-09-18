@@ -148,8 +148,14 @@
 		}
 		.device-switcher-container {
 			display: flex;
+			justify-content: space-between;
+			width: 28%;
+			max-width: 135px;
 			.device-switcher__icon-wrapper {
 				display: flex;
+				width: 25px;
+				justify-content: center;
+				align-items: center;
 				margin: 0 10px;
 				position: relative;
 				&.icon-active {

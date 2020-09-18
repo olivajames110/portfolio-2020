@@ -41,6 +41,12 @@ section {
 // 	}
 // }
 
+@media only screen and (max-width: 1000px) {
+	.featured-project__secondary {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	.featured-project__secondary {
 		display: flex;

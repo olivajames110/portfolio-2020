@@ -19,6 +19,13 @@ section {
   gap: 30px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .featured-project__secondary {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .featured-project__secondary {
     display: -webkit-box;
