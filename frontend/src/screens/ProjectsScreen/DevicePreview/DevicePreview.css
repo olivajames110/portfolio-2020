@@ -16,7 +16,8 @@
 }
 
 .modal.mobile {
-  width: 35%;
+  width: 430px;
+  max-height: 840px;
 }
 
 .modal.desktop-full-screen {
@@ -182,18 +183,25 @@
   position: relative;
 }
 
+.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active {
+  position: relative;
+}
+
 .modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg {
   color: var(--blueText);
   fill: var(--blueText);
   stroke: var(--blueText) !important;
+}
+
+.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg rect,
+.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg circle,
+.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg path {
+  fill: var(--blueText) !important;
+  stroke: var(--blueText) !important;
   stroke: var(--blueText) !important;
 }
 
-.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg rect {
-  stroke: var(--blueText) !important;
-}
-
-.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg:after {
+.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active:after {
   content: '';
   position: absolute;
   bottom: -5px;

@@ -52,7 +52,8 @@
 
 .project-item-container .icon-container .icon-item-wrapper svg path,
 .project-item-container .icon-container .icon-item-wrapper svg circle,
-.project-item-container .icon-container .icon-item-wrapper svg line {
+.project-item-container .icon-container .icon-item-wrapper svg line,
+.project-item-container .icon-container .icon-item-wrapper svg polyline {
   stroke: #ffffff !important;
 }
 
