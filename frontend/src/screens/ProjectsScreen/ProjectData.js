@@ -1,52 +1,52 @@
 export const projectData = {
 	websites    : [
-		{
-			image       : 'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674271.png',
-			title       : 'Millhouse Brewing',
-			description : 'Create an account and store your favorite locations or places you have visited.',
-			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
-			frameworks  : 'SASS, React JS, Express, Mongoose',
-			url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
-			github      : 'https://github.com/olivajames110/mern',
-			group       : 'websites'
-		},
-		{
-			image       : 'https://digitalmarketing.blob.core.windows.net/5587/images/items/image608624.jpg',
-			title       : 'Benvenuto Cafe',
-			description : 'Create an account and store your favorite locations or places you have visited.',
-			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
-			frameworks  : 'SASS, React JS, Express, Mongoose',
-			url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
-			github      : 'https://github.com/olivajames110/mern',
-			group       : 'websites'
-		},
+		// {
+		// 	image       : 'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674271.png',
+		// 	title       : 'Millhouse Brewing',
+		// 	description : 'Create an account and store your favorite locations or places you have visited.',
+		// 	languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
+		// 	frameworks  : 'SASS, React JS, Express, Mongoose',
+		// 	url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
+		// 	github      : 'https://github.com/olivajames110/mern',
+		// 	group       : 'websites'
+		// },
+		// {
+		// 	image       : 'https://digitalmarketing.blob.core.windows.net/5587/images/items/image608624.jpg',
+		// 	title       : 'Benvenuto Cafe',
+		// 	description : 'Create an account and store your favorite locations or places you have visited.',
+		// 	languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
+		// 	frameworks  : 'SASS, React JS, Express, Mongoose',
+		// 	url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
+		// 	github      : 'https://github.com/olivajames110/mern',
+		// 	group       : 'websites'
+		// },
 		{
 			image       : 'https://digitalmarketing.blob.core.windows.net/5215/images/items/image606691.jpg',
 			title       : 'Ordereze ',
 			description : 'Create an account and store your favorite locations or places you have visited.',
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
-			url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
+			url         : 'http://ordereze.com/',
 			github      : 'https://github.com/olivajames110/mern',
 			group       : 'websites'
 		},
-		{
-			image       : ' https://digitalmarketing.blob.core.windows.net/5587/images/items/image608625.jpg',
-			title       : 'Grillmarx Steakhouse',
-			description : 'Create an account and store your favorite locations or places you have visited.',
-			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
-			frameworks  : 'SASS, React JS, Express, Mongoose',
-			url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
-			github      : 'https://github.com/olivajames110/mern',
-			group       : 'websites'
-		},
+		// {
+		// 	image       : ' https://digitalmarketing.blob.core.windows.net/5587/images/items/image608625.jpg',
+		// 	title       : 'Grillmarx Steakhouse',
+		// 	description : 'Create an account and store your favorite locations or places you have visited.',
+		// 	languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
+		// 	frameworks  : 'SASS, React JS, Express, Mongoose',
+		// 	url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
+		// 	github      : 'https://github.com/olivajames110/mern',
+		// 	group       : 'websites'
+		// },
 		{
 			image       : 'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674270.png',
 			title       : 'Trucircle',
 			description : 'Create an account and store your favorite locations or places you have visited.',
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
-			url         : 'https://olivajames110.github.io/online-ordering-price-comparison/',
+			url         : 'https://tru-circle.web.app/',
 			github      : 'https://github.com/olivajames110/mern',
 			group       : 'websites'
 		}
@@ -87,7 +87,8 @@ export const projectData = {
 		{
 			image       : 'https://digitalmarketing.blob.core.windows.net/10042/images/items/image674650.png',
 			title       : 'Cattery',
-			description : 'Create an account and store your favorite locations or places you have visited.',
+			description :
+				'Occupant capacity management tool built for a Catpurrccinos Cat Cafe that allows a maximum of 15 people in a room. This utilizes a websocket so view this project on a different device to see immediate party additions.',
 			languages   : 'HTML, CSS, Javascript, Node JS, Mongo DB, Websocket',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
 			url         : 'https://olivajames110.github.io/cattery',
@@ -95,12 +96,12 @@ export const projectData = {
 			group       : 'forfun'
 		},
 		{
-			image       : 'https://digitalmarketing.blob.core.windows.net/5215/images/items/image606690.jpg',
+			image       : 'https://digitalmarketing.blob.core.windows.net/10042/images/items/image679295.png',
 			title       : 'Baseball Card Builder',
 			description : 'Build your own custom baseball card.',
 			languages   : 'HTML, CSS, Javascript',
 			frameworks  : 'SASS, React JS, Express, Mongoose',
-			url         : 'https://olivajames110.github.io/cattery',
+			url         : 'https://baseballcard-builder.web.app/',
 			github      : 'https://github.com/olivajames110/mern',
 			group       : 'forfun'
 		}
