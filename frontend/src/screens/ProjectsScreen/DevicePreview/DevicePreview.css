@@ -176,7 +176,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 28%;
+  width: initial;
   max-width: 135px;
 }
 
@@ -269,7 +269,7 @@
 
 @media only screen and (max-width: 965px) {
   .modal {
-    width: 94%;
+    width: 100%;
   }
   .btn-circle {
     width: 22px !important;
