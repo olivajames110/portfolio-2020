@@ -149,7 +149,7 @@
 		.device-switcher-container {
 			display: flex;
 			justify-content: space-between;
-			width: 28%;
+			width: initial;
 			max-width: 135px;
 			.device-switcher__icon-wrapper {
 				display: flex;
@@ -232,7 +232,7 @@
 
 @media only screen and (max-width: 965px) {
 	.modal {
-		width: 94%;
+		width: 100%;
 	}
 
 	.btn-circle {
