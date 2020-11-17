@@ -12,7 +12,8 @@ const HomeScreen = () => {
 								<div className="content">
 										<JimmySVG/>
 										<span className="sub-heading">
-												I am a self-tought Front-End Developer with strong UX/UI and design experience.
+												I am a self-tought Front-End Developer with a background of UX/UI web design
+												experience.
 										</span>
 
 										<a class="projects-btn" href="projects">
