@@ -213,8 +213,9 @@
 }
 
 .project-item-container .project-item__details h3 {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
+  color: #434242;
 }
 
 .project-item-container .project-item__details .arrow {
@@ -241,7 +242,7 @@
 
 .project-item-container .project-item__details .details-content_row h4 {
   font-size: 13px;
-  font-weight: 600;
+  color: var(--blueText);
 }
 
 .project-item-container .item-active:after {

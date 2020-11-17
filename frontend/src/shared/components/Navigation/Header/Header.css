@@ -1,5 +1,5 @@
 header {
-  position: fixed;
+  position: relative;
   width: 100%;
   padding: 1em;
   -webkit-box-shadow: var(--boxShadow);
@@ -20,6 +20,14 @@ header .header-inner-wrapper {
           justify-content: space-between;
   max-width: var(--pageMaxWidth);
   margin: 0 auto;
+}
+
+header .header-inner-wrapper svg#j-logo {
+  width: 40px;
+}
+
+header .header-inner-wrapper a {
+  position: relative;
 }
 
 header .header-inner-wrapper svg {
@@ -43,6 +51,11 @@ nav ul {
 
 nav .nav-item-wrapper {
   margin: 0 2em;
+  font-size: 16px;
+}
+
+nav .nav-item-wrapper:hover {
+  color: var(--blueText);
 }
 
 nav#side-drawer-nav ul {
@@ -59,15 +72,35 @@ nav .sidedrawer-toggle-button {
 
 nav .sidedrawer-toggle-button svg {
   fill: #333;
-  width: 35px;
+  width: 24px;
 }
 
 @media only screen and (max-width: 600px) {
+  header {
+    position: fixed;
+  }
   #desktop-nav ul {
     display: none !important;
   }
   .sidedrawer-toggle-button {
     display: block !important;
+  }
+  nav#side-drawer-nav {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  nav#side-drawer-nav li {
+    margin: 24px 0;
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=Header.css.map */

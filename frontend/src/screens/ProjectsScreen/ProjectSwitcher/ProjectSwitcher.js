@@ -6,7 +6,7 @@ import './ProjectSwitcher.css';
 
 const ProjectSwitcher = (props) => {
 	const [ currentCategory, setCurrentCategory ] = useState('All');
-	const categories = [ 'All', 'Websites', 'Calculators', 'For Fun' ];
+	const categories = [ 'All', 'Websites', 'Projects For People', 'For Fun' ];
 
 	const handleProjectGroupChange = (cat) => {
 		let group = cat.split(' ').join('').toLowerCase();

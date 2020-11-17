@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
+
 import {ReactComponent as Logo} from '../../../icons/logo.svg';
 import {ReactComponent as Hamburger} from '../../../icons//hamburger/hamburger.svg';
-import {ReactComponent as HamburgerAnimation} from '../../../icons//hamburger/hamburgerAnimation.svg';
+import {ReactComponent as Jlogo} from '../../../svgs/jlogo.svg';
 import Nav from '../Nav/Nav';
 import NavLinksList from '../NavLinksList/NavLinksList';
 import NavLinkItem from '../NavLinkItem/NavLinkItem';
@@ -18,7 +19,7 @@ const Header = (props) => {
    };
 
    const sideDrawerContent = (
-      <SideDrawer onClick={closeDrawer} show={drawerIsOpen}>
+      <SideDrawer closeDrawer={closeDrawer} show={drawerIsOpen}>
          <Nav id="side-drawer-nav">
             <NavLinksList/>
          </Nav>
@@ -31,7 +32,7 @@ const Header = (props) => {
          <header>
             <div className="header-inner-wrapper">
                <NavLinkItem to="/">
-                  <Logo/>
+                  <Jlogo/>
                </NavLinkItem>
                <Nav id="desktop-nav">
                   <NavLinksList/>

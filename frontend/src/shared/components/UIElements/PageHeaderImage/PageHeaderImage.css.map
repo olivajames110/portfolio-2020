@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACvB,gBAAgB,EAAE,OAAkB;EACpC,OAAO,EAAE,MAAM;EACf,KAAK,EAAE,IAAI;CAGX",
+    "sources": [
+        "PageHeaderImage.scss"
+    ],
+    "names": [],
+    "file": "PageHeaderImage.css"
+}

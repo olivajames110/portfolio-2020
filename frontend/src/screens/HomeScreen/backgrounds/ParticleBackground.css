@@ -1,0 +1,169 @@
+#particle-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #2d364c 0%, #252d3f 100%);
+  z-index: 1;
+}
+
+#particle-background #tsparticles {
+  height: 100%;
+}
+
+#particle-background .background-switcher-container {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#particle-background .background-switcher-container .edit-background-button {
+  background-color: rgba(255, 255, 255, 0.611);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#particle-background .background-switcher-container .edit-background-button:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+#particle-background .background-switcher-container .edit-background-button svg {
+  width: 20px;
+}
+
+#particle-background .background-switcher-container .background-options-wrapper {
+  position: relative;
+}
+
+#particle-background .background-switcher-container .background-options-wrapper .background-options__button {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-duration: 650ms;
+          animation-duration: 650ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  top: 0;
+  right: 0;
+}
+
+#particle-background .background-switcher-container .background-options-wrapper .background-options__button:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#particle-background .background-switcher-container .background-options-wrapper .background-options__button svg {
+  width: 12px;
+  margin-left: 6px;
+}
+
+#particle-background .background-switcher-container .background-options-wrapper .background-options__button:nth-child(1) {
+  -webkit-animation-name: buttonSlide1;
+          animation-name: buttonSlide1;
+}
+
+#particle-background .background-switcher-container .background-options-wrapper .background-options__button:nth-child(2) {
+  -webkit-animation-name: buttonSlide2;
+          animation-name: buttonSlide2;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+#particle-background .background-switcher-container .background-options-wrapper .background-options__button:nth-child(3) {
+  -webkit-animation-name: buttonSlide3;
+          animation-name: buttonSlide3;
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+@media only screen and (max-width: 600px) {
+  #particle-background .background-switcher-container {
+    top: unset;
+    bottom: 65px;
+    right: 25px;
+  }
+}
+
+@-webkit-keyframes buttonSlide1 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(10px, 25px);
+            transform: translate(10px, 25px);
+  }
+}
+
+@keyframes buttonSlide1 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(10px, 25px);
+            transform: translate(10px, 25px);
+  }
+}
+
+@-webkit-keyframes buttonSlide2 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(-55px, 10px);
+            transform: translate(-55px, 10px);
+  }
+}
+
+@keyframes buttonSlide2 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(-55px, 10px);
+            transform: translate(-55px, 10px);
+  }
+}
+
+@-webkit-keyframes buttonSlide3 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(-60px, -30px);
+            transform: translate(-60px, -30px);
+  }
+}
+
+@keyframes buttonSlide3 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(-60px, -30px);
+            transform: translate(-60px, -30px);
+  }
+}
+/*# sourceMappingURL=ParticleBackground.css.map */

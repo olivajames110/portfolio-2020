@@ -99,10 +99,10 @@ h3 {
 	/* margin-bottom: 10px; */
 }
 h4 {
-	font-family: var(--jost);
+	font-family: var(--nunito);
 	/* font-family: var(--lato); */
 	font-size: 15px;
-	font-weight: 600;
+	font-weight: bold;
 	/* margin-bottom: 10px; */
 }
 

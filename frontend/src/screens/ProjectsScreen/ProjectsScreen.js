@@ -7,6 +7,7 @@ import { isMobile } from 'react-device-detect';
 import DevicePreview from './DevicePreview/DevicePreview';
 import ProjectSwitcher from './ProjectSwitcher/ProjectSwitcher';
 import { projectData } from './ProjectData';
+import PageHeaderImage from '../../shared/components/UIElements/PageHeaderImage/PageHeaderImage';
 
 import './ProjectsScreen.css';
 
@@ -42,7 +43,7 @@ const ProjectsScreen = () => {
 					image={p.image}
 					title={p.title}
 					description={p.description}
-					languages={p.languages}
+					technology={p.technology}
 					frameworks={p.frameworks}
 					url={p.url}
 					github={p.github}
@@ -63,7 +64,7 @@ const ProjectsScreen = () => {
 								image={p.image}
 								title={p.title}
 								description={p.description}
-								languages={p.languages}
+								technology={p.technology}
 								frameworks={p.frameworks}
 								url={p.url}
 								github={p.github}
@@ -82,7 +83,7 @@ const ProjectsScreen = () => {
 	// 					image={p.image}
 	// 					title={p.title}
 	// 					description={p.description}
-	// 					languages={p.languages}
+	// 					technology={p.technology}
 	// 					frameworks={p.frameworks}
 	// 					url={p.url}
 	// 					github={p.github}
@@ -94,34 +95,42 @@ const ProjectsScreen = () => {
 	// );
 
 	return (
-		<Main>
-			<DevicePreview show={projectPreview} onCancel={() => setProjectPreview(false)} project={projectPreview} />
-			<section className="" id="featured-projects">
-				<h1>Featured Project</h1>
-				<div className="featured-project__primary">
-					<Project
-						featured
-						image={projectData.forfun[0].image}
-						title={projectData.forfun[0].title}
-						description={projectData.forfun[0].description}
-						languages={projectData.forfun[0].languages}
-						frameworks={projectData.forfun[0].frameworks}
-						url={projectData.forfun[0].url}
-						github={projectData.forfun[0].github}
-						handleProjectPreview={handleProjectPreview}
-					/>
-				</div>
-			</section>
-			<section>
-				<h2>Other Projects</h2>
-				<ProjectSwitcher setProjectGroup={setProjectGroup} />
-				<div className="project-list-container">
-					{
-						projectGroup === 'all' ? allProjects :
-						projectList}
-				</div>
-			</section>
-		</Main>
+		<React.Fragment>
+			<PageHeaderImage />
+
+			<Main>
+				<DevicePreview
+					show={projectPreview}
+					onCancel={() => setProjectPreview(false)}
+					project={projectPreview}
+				/>
+
+				<section className="" id="featured-projects">
+					<h1>Featured Project</h1>
+					<div className="featured-project__primary">
+						<Project
+							featured
+							image={projectData.forfun[0].image}
+							title={projectData.forfun[0].title}
+							description={projectData.forfun[0].description}
+							technology={projectData.forfun[0].technology}
+							url={projectData.forfun[0].url}
+							github={projectData.forfun[0].github}
+							handleProjectPreview={handleProjectPreview}
+						/>
+					</div>
+				</section>
+				<section>
+					<h2>Other Projects</h2>
+					<ProjectSwitcher setProjectGroup={setProjectGroup} />
+					<div className="project-list-container">
+						{
+							projectGroup === 'all' ? allProjects :
+							projectList}
+					</div>
+				</section>
+			</Main>
+		</React.Fragment>
 	);
 };
 

@@ -77,12 +77,8 @@ const ProjectItemCardItem = (props) => {
 									<span>{description}</span>
 								</div>
 								<div className={`details-content_row  `}>
-									<h4>Languages</h4>
-									<span>{props.languages}</span>
-								</div>
-								<div className={`details-content_row  `}>
-									<h4>Frameworks</h4>
-									<span>{props.frameworks}</span>
+									<h4>Technology</h4>
+									<span>{props.technology}</span>
 								</div>
 							</div>
 						)}

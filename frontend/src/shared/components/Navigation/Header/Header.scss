@@ -1,5 +1,6 @@
 header {
-	position: fixed;
+	// position: fixed;
+	position: relative;
 	width: 100%;
 	padding: 1em;
 	box-shadow: var(--boxShadow);
@@ -11,6 +12,14 @@ header {
 		justify-content: space-between;
 		max-width: var(--pageMaxWidth);
 		margin: 0 auto;
+		svg#j-logo {
+			// position: absolute;
+			// top: 20px;
+			width: 40px;
+		}
+		a {
+			position: relative;
+		}
 		svg {
 			width: 65px;
 			display: block;
@@ -30,6 +39,10 @@ nav {
 
 	.nav-item-wrapper {
 		margin: 0 2em;
+		font-size: 16px;
+		&:hover {
+			color: var(--blueText);
+		}
 	}
 	&#desktop-nav ul {
 		// flex-direction: ;
@@ -42,17 +55,33 @@ nav {
 		border: none;
 		svg {
 			fill: #333;
-			width: 35px;
+			width: 24px;
 		}
 	}
 }
 
 @media only screen and (max-width: 600px) {
+	header {
+		position: fixed;
+	}
+
 	#desktop-nav ul {
 		display: none !important;
 	}
 
 	.sidedrawer-toggle-button {
 		display: block !important;
+	}
+
+	nav#side-drawer-nav {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		li {
+			margin: 24px 0;
+			font-size: 24px;
+		}
 	}
 }

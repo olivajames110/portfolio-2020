@@ -5,7 +5,6 @@ main {
 main .main-wrapper {
   max-width: var(--pageMaxWidth);
   margin: 0 auto;
-  padding: 50px 0;
 }
 
 main section {
