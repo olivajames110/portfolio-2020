@@ -4,10 +4,7 @@
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	// background-color: #14213d;
-	// background-color: #0b090a;
-	// background-color: #011627;
-	// background: linear-gradient(90deg, #06020c, #01080f);
+	background: -o-linear-gradient(45deg, rgb(45, 54, 76) 0%, rgb(37, 45, 63) 100%);
 	background: linear-gradient(45deg, rgb(45, 54, 76) 0%, rgb(37, 45, 63) 100%);
 	z-index: 1;
 	#tsparticles {
@@ -23,9 +20,17 @@
 			border-radius: 50%;
 			width: 38px;
 			height: 38px;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
 			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
 			align-items: center;
+			-webkit-transition: 300ms;
+			-o-transition: 300ms;
 			transition: 300ms;
 			&:hover {
 				background-color: rgba(255, 255, 255, 0.75);
@@ -38,11 +43,17 @@
 		.background-options-wrapper {
 			position: relative;
 			.background-options__button {
+				-webkit-transition: 300ms;
+				-o-transition: 300ms;
 				transition: 300ms;
 				color: rgba(255, 255, 255, 0.75);
 				position: absolute;
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
+				-webkit-animation-duration: 650ms;
 				animation-duration: 650ms;
+				-webkit-animation-fill-mode: forwards;
 				animation-fill-mode: forwards;
 				top: 0;
 				right: 0;
@@ -55,13 +66,19 @@
 				}
 				&:nth-child(1) {
 					animation-name: buttonSlide1;
+					-webkit-animation-name: buttonSlide1;
+					animation-name: buttonSlide1;
 				}
 				&:nth-child(2) {
+					-webkit-animation-name: buttonSlide2;
 					animation-name: buttonSlide2;
+					-webkit-animation-delay: 100ms;
 					animation-delay: 100ms;
 				}
 				&:nth-child(3) {
+					-webkit-animation-name: buttonSlide3;
 					animation-name: buttonSlide3;
+					-webkit-animation-delay: 150ms;
 					animation-delay: 150ms;
 				}
 			}
