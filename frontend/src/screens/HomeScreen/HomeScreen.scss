@@ -8,7 +8,6 @@
 		rgba(242, 242, 242, 1) 77%,
 		rgba(254, 254, 254, 1) 100%
 	);
-	// padding-top: 100px;
 	height: 100%;
 	min-height: 600px;
 	position: relative;
@@ -24,13 +23,11 @@
 	align-items: center;
 	color: white;
 	flex-direction: column;
-	// background: linear-gradient(270deg, #2ab893, #572ab8);
 	background-size: 400% 400%;
 	-webkit-animation: bgFlow 20s ease infinite;
 	-moz-animation: bgFlow 20s ease infinite;
 	animation: bgFlow 80s ease infinite;
 	text-align: center;
-	// background: url('https://www.tiny.cloud/static/bg-gradient-mesh-bbb002e33e5bff434618c6d20550f303.svg');
 }
 .home-img h1 {
 	font-size: 2.5em;
@@ -40,7 +37,6 @@
 }
 
 .home-img .sub-heading {
-	// font-size: 1.2em;
 	font-size: 24px;
 	line-height: 1.5em;
 	padding: 0 18px;
@@ -57,12 +53,12 @@
 }
 
 .projects-btn {
-	font-size: 16px;
 	padding: 1.2em 2.3em;
-	/* background: var(--color-icon); */
 	background: #283145c7;
 	background-size: 200% 100%;
 	background-position: right bottom;
+	-webkit-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 	border: 1px solid white;
 	border-radius: 2px;
@@ -70,21 +66,24 @@
 	margin-top: 30px;
 	cursor: pointer;
 	opacity: 0;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
 	transition: 1s;
 	position: relative;
 	overflow: hidden;
-
+	-webkit-animation: fadeIn 1s ease forwards 1.8s;
 	animation: fadeIn 1s ease forwards 1.8s;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 	svg {
 		width: 18px;
 		margin-left: 8px;
 	}
 }
-
-// .home-img a svg {
-// 	margin-left: 8px;
-// }
 
 .home-img a span {
 	position: relative;

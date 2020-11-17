@@ -56,9 +56,7 @@
 }
 
 .projects-btn {
-  font-size: 16px;
   padding: 1.2em 2.3em;
-  /* background: var(--color-icon); */
   background: #283145c7;
   background-size: 200% 100%;
   background-position: right bottom;
@@ -75,10 +73,13 @@
   position: relative;
   overflow: hidden;
   -webkit-animation: fadeIn 1s ease forwards 1.8s;
-          animation: fadeIn 1s ease forwards 1.8s;
+  animation: fadeIn 1s ease forwards 1.8s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .projects-btn svg {

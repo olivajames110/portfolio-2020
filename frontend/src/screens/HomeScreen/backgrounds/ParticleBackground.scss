@@ -55,21 +55,14 @@
 				}
 				&:nth-child(1) {
 					animation-name: buttonSlide1;
-					// animation-delay: 100ms;
-					// top: 10px;
-					// right: -25px;
 				}
 				&:nth-child(2) {
 					animation-name: buttonSlide2;
 					animation-delay: 100ms;
-					// top: -10px;
-					// right: 55px;
 				}
 				&:nth-child(3) {
 					animation-name: buttonSlide3;
 					animation-delay: 150ms;
-					// top: -60px;
-					// right: 50px;
 				}
 			}
 		}
@@ -79,7 +72,7 @@
 @media only screen and (max-width: 600px) {
 	#particle-background .background-switcher-container {
 		top: unset;
-		bottom: 65px;
+		bottom: 20%;
 		right: 25px;
 	}
 }
