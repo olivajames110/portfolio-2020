@@ -48,9 +48,7 @@
 				transition: 300ms;
 				color: rgba(255, 255, 255, 0.75);
 				position: absolute;
-				display: -webkit-box;
-				display: -ms-flexbox;
-				display: flex;
+				white-space: nowrap;
 				-webkit-animation-duration: 650ms;
 				animation-duration: 650ms;
 				-webkit-animation-fill-mode: forwards;
@@ -61,8 +59,9 @@
 					color: rgba(255, 255, 255, 0.9);
 				}
 				svg {
-					width: 12px;
 					margin-left: 6px;
+					margin-bottom: -2px;
+					height: 14px;
 				}
 				&:nth-child(1) {
 					animation-name: buttonSlide1;
