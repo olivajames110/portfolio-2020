@@ -1,5 +1,7 @@
 header {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
   padding: 1em;
   -webkit-box-shadow: var(--boxShadow);
@@ -76,9 +78,6 @@ nav .sidedrawer-toggle-button svg {
 }
 
 @media only screen and (max-width: 600px) {
-  header {
-    position: fixed;
-  }
   #desktop-nav ul {
     display: none !important;
   }

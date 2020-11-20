@@ -10,69 +10,6 @@
   border-radius: 16px !important;
 }
 
-.project-item-container .icon-container {
-  position: absolute;
-  cursor: pointer;
-  top: 5px;
-  right: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #222222;
-  border-radius: 16px;
-}
-
-.project-item-container .icon-container button {
-  padding: 0;
-  background: none;
-  border: none;
-}
-
-.project-item-container .icon-container svg {
-  cursor: pointer;
-  height: 14px;
-  color: #ffffff;
-}
-
-.project-item-container .icon-container svg path {
-  stroke: #313131;
-  stroke-width: 4px;
-  stroke-linejoin: round;
-}
-
-.project-item-container .icon-container .icon-item-wrapper {
-  padding: 0 9px;
-  padding-top: 6px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00000091), to(#0000005e));
-  background: linear-gradient(180deg, #00000091, #0000005e);
-  margin: 0 0px;
-  -webkit-transition: 150ms;
-  transition: 150ms;
-}
-
-.project-item-container .icon-container .icon-item-wrapper svg path,
-.project-item-container .icon-container .icon-item-wrapper svg circle,
-.project-item-container .icon-container .icon-item-wrapper svg line,
-.project-item-container .icon-container .icon-item-wrapper svg polyline {
-  stroke: #ffffff !important;
-}
-
-.project-item-container .icon-container .icon-item-wrapper:hover {
-  background-color: #00000072;
-}
-
-.project-item-container .icon-container .icon-item-wrapper:nth-child(1) {
-  padding-left: 15px;
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
-}
-
-.project-item-container .icon-container .icon-item-wrapper#code-icon {
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-  padding-right: 15px;
-}
-
 .project-item-container .project-item__image {
   position: relative;
 }
@@ -102,6 +39,83 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.056);
+}
+
+.project-item-container .project-item__image .featured-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.project-item-container .project-item__image .featured-icon svg {
+  height: 24px;
+}
+
+.project-item-container .project-item__image .featured-icon svg path {
+  fill: gold;
+}
+
+.project-item-container .project-item__image .icon-container {
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #222222;
+  border-radius: 16px;
+}
+
+.project-item-container .project-item__image .icon-container button {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.project-item-container .project-item__image .icon-container svg {
+  cursor: pointer;
+  height: 14px;
+  color: #ffffff;
+}
+
+.project-item-container .project-item__image .icon-container svg path {
+  stroke: #313131;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+
+.project-item-container .project-item__image .icon-container .icon-item-wrapper {
+  padding: 0 9px;
+  padding-top: 6px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000091), to(#0000005e));
+  background: linear-gradient(180deg, #00000091, #0000005e);
+  margin: 0 0px;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
+.project-item-container .project-item__image .icon-container .icon-item-wrapper svg path,
+.project-item-container .project-item__image .icon-container .icon-item-wrapper svg circle,
+.project-item-container .project-item__image .icon-container .icon-item-wrapper svg line,
+.project-item-container .project-item__image .icon-container .icon-item-wrapper svg polyline {
+  stroke: #ffffff !important;
+}
+
+.project-item-container .project-item__image .icon-container .icon-item-wrapper:hover {
+  background-color: #00000072;
+}
+
+.project-item-container .project-item__image .icon-container .icon-item-wrapper:nth-child(1) {
+  padding-left: 15px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.project-item-container .project-item__image .icon-container .icon-item-wrapper#code-icon {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding-right: 15px;
 }
 
 .project-item-container .project-item__image .featured {

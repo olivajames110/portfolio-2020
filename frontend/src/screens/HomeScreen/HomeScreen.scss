@@ -66,9 +66,9 @@
 	margin-top: 30px;
 	cursor: pointer;
 	opacity: 0;
-	-webkit-transition: 1s;
-	-o-transition: 1s;
-	transition: 1s;
+	-webkit-transition: 330ms;
+	-o-transition: 330ms;
+	transition: 330ms;
 	position: relative;
 	overflow: hidden;
 	font-size: 16px;
@@ -80,6 +80,10 @@
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	&:hover {
+		background-color: var(--blue);
+		color: #ffffff;
+	}
 	svg {
 		height: 12px;
 		margin-left: 10px;
