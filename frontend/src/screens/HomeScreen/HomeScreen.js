@@ -3,6 +3,7 @@ import Main from '../../shared/components/UIElements/Main/Main';
 import './HomeScreen.css';
 import ParticleBackground from './backgrounds/ParticleBackground.js';
 import {ReactComponent as Arrow} from '../../shared/icons/long-arrow-right.svg';
+import {ReactComponent as Chevron} from '../../shared/icons/chevron-right.svg';
 import JimmySVG from '../../shared/svgs/jimmy';
 
 const HomeScreen = () => {
@@ -18,7 +19,7 @@ const HomeScreen = () => {
 
 										<a class="projects-btn" href="projects">
 												<span>See My Projects</span>
-												<Arrow/>
+												<Chevron/>
 										</a>
 								</div>
 								<ParticleBackground/>

@@ -96,7 +96,7 @@
 @media only screen and (max-width: 600px) {
   #particle-background .background-switcher-container {
     top: unset;
-    bottom: 20%;
+    bottom: 30%;
     right: 25px;
   }
 }

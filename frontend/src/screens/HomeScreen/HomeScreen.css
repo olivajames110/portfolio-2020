@@ -40,7 +40,7 @@
 }
 
 .home-img .sub-heading {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.5em;
   padding: 0 18px;
   letter-spacing: 1px;
@@ -72,6 +72,7 @@
   transition: 1s;
   position: relative;
   overflow: hidden;
+  font-size: 16px;
   -webkit-animation: fadeIn 1s ease forwards 1.8s;
   animation: fadeIn 1s ease forwards 1.8s;
   display: -webkit-box;
@@ -83,8 +84,8 @@
 }
 
 .projects-btn svg {
-  width: 18px;
-  margin-left: 8px;
+  height: 12px;
+  margin-left: 10px;
 }
 
 .home-img a span {
@@ -143,7 +144,7 @@
 }
 
 .content #home-img-svg {
-  width: 80%;
+  width: 85%;
 }
 
 @-webkit-keyframes line-animation {
@@ -228,9 +229,9 @@
     margin-top: -55px;
   }
   .home-img .sub-heading {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5em;
-    padding: 0px 35px;
+    padding: 0px 25px;
     letter-spacing: 1px;
   }
 }
