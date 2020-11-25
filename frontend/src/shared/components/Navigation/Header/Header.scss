@@ -6,11 +6,16 @@ header {
 	padding: 1em;
 	box-shadow: var(--boxShadow);
 	z-index: 1111;
+	height: var(--headerHeight);
 	background: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	.header-inner-wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		width: 100%;
 		max-width: var(--pageMaxWidth);
 		margin: 0 auto;
 		svg#j-logo {

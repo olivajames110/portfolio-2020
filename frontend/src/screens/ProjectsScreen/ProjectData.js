@@ -16,7 +16,7 @@ export const projectData = {
 				// account and store your favorite locations or places you have visited.',
 				// 	technology : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API', 	url :
 				// 'https://olivajames110.github.io/online-ordering-price-comparison/', 	github
-				//   : 'https://github.com/olivajames110/mern', 	group       : 'websites' }, {
+				// : 'https://github.com/olivajames110/mern', 	group       : 'websites' }, {
 				// 	image       :
 				// 'https://digitalmarketing.blob.core.windows.net/5587/images/items/image608624
 				// . jpg', 	title       : 'Benvenuto Cafe', 	description : 'Create an account
@@ -41,7 +41,7 @@ export const projectData = {
 				// account and store your favorite locations or places you have visited.',
 				// 	technology : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API', 	url :
 				// 'https://olivajames110.github.io/online-ordering-price-comparison/', 	github
-				//   : 'https://github.com/olivajames110/mern', 	group       : 'websites' },
+				// : 'https://github.com/olivajames110/mern', 	group       : 'websites' },
 				{
 						image: truCircle,
 						title: 'Trucircle',

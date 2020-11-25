@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(45deg, #2d364c 0%, #252d3f 100%);
   z-index: 1;
 }
@@ -14,7 +14,7 @@
 
 #particle-background .background-switcher-container {
   position: absolute;
-  top: 35px;
+  top: 5%;
   right: 20px;
   cursor: pointer;
 }
@@ -91,14 +91,6 @@
   animation-name: buttonSlide3;
   -webkit-animation-delay: 150ms;
   animation-delay: 150ms;
-}
-
-@media only screen and (max-width: 600px) {
-  #particle-background .background-switcher-container {
-    top: unset;
-    bottom: 30%;
-    right: 25px;
-  }
 }
 
 @-webkit-keyframes buttonSlide1 {

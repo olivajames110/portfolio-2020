@@ -1,8 +1,17 @@
 footer {
-  background-color: #f7f7f7;
-  border-top: 1px solid #dddddd;
+  background-color: var(--darkGray);
+  border-top: 1px solid #ffffff51;
   width: 100%;
   padding: 30px;
+  color: #ffffff;
   text-align: center;
+}
+
+footer .inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=Footer.css.map */

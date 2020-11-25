@@ -7,7 +7,17 @@ header {
   -webkit-box-shadow: var(--boxShadow);
           box-shadow: var(--boxShadow);
   z-index: 1111;
+  height: var(--headerHeight);
   background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .header-inner-wrapper {
@@ -20,6 +30,7 @@ header .header-inner-wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
   max-width: var(--pageMaxWidth);
   margin: 0 auto;
 }

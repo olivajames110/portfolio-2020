@@ -40,6 +40,7 @@ code {
 	--darkBlue: #557dbf;
 	--green: #1fb57b;
 	--darkGreen: #129b6a;
+	--darkGray: #212121;
 	--lightGreen: #85d3bd;
 	--yellow: #fddf71;
 	--darkYellow: #d7b258;
@@ -57,6 +58,12 @@ code {
 	--nunito: 'Nunito', sans-serif;
 	--lato: 'Lato', sans-serif;
 	--jost: 'Jost', sans-serif;
+	--headerHeight: 80px;
+}
+
+body,
+html {
+	height: 100%;
 }
 
 button,
