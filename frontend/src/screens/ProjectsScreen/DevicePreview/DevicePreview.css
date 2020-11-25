@@ -237,6 +237,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  padding-bottom: 80px;
 }
 
 .modal .modal__body .loading-spinner-container {
@@ -294,6 +295,9 @@
 @media only screen and (max-width: 965px) {
   .modal {
     width: 100%;
+  }
+  .modal header {
+    height: unset !important;
   }
   .btn-circle {
     width: 22px !important;
