@@ -5,15 +5,29 @@
 	// background-color: #a59e8c;
 	// color: #2c2c2c;
 	// background-color: #93a8ac;
-	background-color: #212121;
-	// background: -o-linear-gradient(45deg, #2d364c 0%, #252d3f 100%);
-	// background: linear-gradient(45deg, #222c46 0%, #102554 100%);
-
+	// background-color: #212121;
+	position: relative;
+	background: url('../../../images/code-background.jpg');
 	text-align: center;
+	&:after {
+		content: '';
+		background: -o-linear-gradient(45deg, #222c46ed 0%, #102554eb 100%);
+		background: linear-gradient(45deg, #222c46ed 0%, #102554eb 100%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		display: block;
+	}
 	h1 {
 		// text-transform: uppercase;
+		position: relative;
 		letter-spacing: 1px;
 		font-size: 40px;
+		z-index: 10;
+		display: block;
 	}
 }
 

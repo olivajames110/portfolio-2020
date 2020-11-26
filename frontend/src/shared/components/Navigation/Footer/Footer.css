@@ -2,7 +2,7 @@ footer {
   background-color: var(--darkGray);
   border-top: 1px solid #ffffff51;
   width: 100%;
-  padding: 30px;
+  padding: 25px 15px;
   color: #ffffff;
   text-align: center;
 }
@@ -11,7 +11,13 @@ footer .inner-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .inner-wrapper .icons-container .icon {
+  display: inline-block;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=Footer.css.map */

@@ -21,7 +21,7 @@ const Header = (props) => {
    const sideDrawerContent = (
       <SideDrawer closeDrawer={closeDrawer} show={drawerIsOpen}>
          <Nav id="side-drawer-nav">
-            <NavLinksList/>
+            <NavLinksList closeDrawer={closeDrawer}/>
          </Nav>
       </SideDrawer>
    );
@@ -35,7 +35,7 @@ const Header = (props) => {
                   <Jlogo/>
                </NavLinkItem>
                <Nav id="desktop-nav">
-                  <NavLinksList/>
+                  <NavLinksList closeDrawer={closeDrawer}/>
                   <button
                      onClick={() => setDrawerIsOpen(true)}
                      className="sidedrawer-toggle-button">

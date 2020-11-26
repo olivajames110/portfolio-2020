@@ -81,23 +81,26 @@ aside.side-drawer {
 
 //CSS ANIMATIONS
 
-.alert-enter {
-	opacity: 0;
-	transform: translateX(-100%);
+.sidenav-enter {
+	// opacity: 0;
+	transform: translateX(-120%);
+	transition: transform 500ms;
 }
-.alert-enter-active {
-	opacity: 1;
+.sidenav-enter-active {
+	// opacity: 1;
 	transform: translateX(0);
 	// transform: translateX(0);
-	transition: opacity 300ms, transform 300ms;
+	transition: transform 500ms;
 }
-.alert-exit {
-	opacity: 1;
+.sidenav-exit {
+	// opacity: 1;
+	transform: translateX(-120%);
+	transition: transform 500ms;
 }
-.alert-exit-active {
-	opacity: 0;
-	transform: translateX(-100%);
-	transition: opacity 300ms, transform 300ms;
+.sidenav-exit-active {
+	// opacity: 0;
+	transform: translateX(-120%);
+	transition: transform 500ms;
 }
 
 @media only screen and (min-width: 600px) {
