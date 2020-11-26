@@ -98,7 +98,15 @@ const DevicePreviewOverlay = (props) => {
 								</div>
 						</header>
 						<div className="modal__body">
-								{isLoaded && loadingSpinner}
+								<CSSTransition
+										in={isLoaded}
+										timeout={200}
+										classNames="fade-in"
+										mountOnEnter
+										unmountOnExit>
+										{loadingSpinner}
+								</CSSTransition>
+
 								<iframe src={project.url} onLoad={() => setIsLoaded(false)} title="title"/>
 						</div>
 				</div>
