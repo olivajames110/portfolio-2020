@@ -9,6 +9,8 @@ section {
 
 .project-list-container {
   overflow: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 
 .featured-project__secondary {
@@ -17,6 +19,10 @@ section {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+}
+
+.featured-project__secondary .project-item-container {
+  scroll-snap-align: center;
 }
 
 @media only screen and (max-width: 1000px) {

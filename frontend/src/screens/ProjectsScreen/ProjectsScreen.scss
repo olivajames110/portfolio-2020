@@ -11,8 +11,8 @@ section {
 	overflow: auto;
 	// margin: 0 -1.5em;
 	// padding-left: 1.5em;
+	scroll-snap-type: x mandatory;
 }
-
 .featured-project__secondary {
 	// height: 260px;
 	display: grid;
@@ -20,11 +20,13 @@ section {
 	gap: 30px;
 	// padding-right: 0 !important;
 	.project-item-container {
+		scroll-snap-align: center;
 		// margin-top: 10px;
 
 		// max-width: 32.5%;
 	}
 }
+
 // .featured-project__secondary {
 // 	// height: 260px;
 // 	display: flex;

@@ -22,7 +22,7 @@ aside.side-drawer .mobile-header svg {
 
 aside.side-drawer #cross-wrapper {
   position: absolute;
-  right: -20px;
+  right: -10px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -41,9 +41,22 @@ aside.side-drawer #cross-wrapper {
           align-items: center;
 }
 
-aside.side-drawer #cross-wrapper svg {
+aside.side-drawer #cross-wrapper #times-icon {
   width: 16px;
   color: #1c1c1c;
+  z-index: 111;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+aside.side-drawer #cross-wrapper #close-button-background {
+  fill: red;
+  width: 30px;
+  position: absolute;
+  left: 0;
+  -webkit-transform: translateX(29px);
+          transform: translateX(29px);
+  z-index: 10;
 }
 
 aside.side-drawer .nav-links {
