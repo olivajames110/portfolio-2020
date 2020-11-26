@@ -76,7 +76,6 @@
 #particle-background .background-switcher-container .background-options-wrapper .background-options__button:nth-child(1) {
   animation-name: buttonSlide1;
   -webkit-animation-name: buttonSlide1;
-  animation-name: buttonSlide1;
 }
 
 #particle-background .background-switcher-container .background-options-wrapper .background-options__button:nth-child(2) {

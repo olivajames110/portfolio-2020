@@ -6,7 +6,7 @@ const NavLinksList = (props) => {
    return (
       <ul>
          <li onCLick={props.closeDrawer} className="nav-item-wrapper">
-            <NavLinkItem to="/about" text="About"/>
+            <NavLinkItem onCLick={props.closeDrawer} to="/about" text="About"/>
          </li>
          <li onCLick={props.closeDrawer} className="nav-item-wrapper">
             <NavLinkItem to="/projects" text="Projects"/>

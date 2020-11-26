@@ -14,7 +14,7 @@ const SideDrawer = (props) => {
          classNames="sidenav"
          mountOnEnter
          unmountOnExit>
-         <aside className="side-drawer" onClick={props.onClick}>
+         <aside className="side-drawer" onClick={props.closeDrawer}>
             <div onClick={props.closeDrawer} id="cross-wrapper">
                <Times/>
             </div>
