@@ -1,6 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react';
 import Main from '../../shared/components/UIElements/Main/Main';
-import HorizontalScroll from '../../shared/components/UIElements/HorizontalScroll/HorizontalScroll';
 import Project from './Project/Project';
 import {sortAZ} from '../../shared/utils/sortAZ';
 import {isMobile} from 'react-device-detect';

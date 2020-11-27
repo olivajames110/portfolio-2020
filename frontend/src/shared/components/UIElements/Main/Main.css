@@ -9,6 +9,7 @@ main .main-wrapper {
 
 main section {
   padding: 0 1.5em;
+  margin: 40px 0 70px 0;
 }
 
 main .no-padding {

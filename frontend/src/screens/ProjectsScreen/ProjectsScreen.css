@@ -3,14 +3,15 @@ h1 {
   font-weight: 600;
 }
 
-section {
-  margin: 50px 0;
-}
-
 .project-list-container {
   overflow: auto;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
+}
+
+.project-list-container .project-item__image .img-wrapper img {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .featured-project__secondary {

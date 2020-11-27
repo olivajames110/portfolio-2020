@@ -1,31 +1,48 @@
 import React from 'react';
+import {ReactComponent as BottomCurve} from '../../../svgs/bottom-curve.svg';
+import {ReactComponent as JLogo} from '../../../svgs/jlogo.svg';
+import {ReactComponent as LinkedIn} from '../../../icons/linkedin.svg';
+import {ReactComponent as Envelope} from '../../../icons/envelope.svg';
+import {ReactComponent as Github} from '../../../icons/github.svg';
+
 import './Footer.css';
+
 const Footer = () => {
    return (
       <footer>
-         <div className="inner-wrapper">
+         <div className="curve">
+            <BottomCurve/>
+         </div>
+         <section className="inner-wrapper">
             <div id="name">
-               <a href="mailto:olivajames110@gmail.com?subject=Hello There">olivajames110@gmail.com</a>
+               <JLogo/>
+               <h3>Want to get in touch? Let's Talk</h3>
             </div>
             <div className="icons-container">
-               <div className="icon" id="github">
+               <div className="icon-wrapper" id="email">
+                  <a href="mailto:olivajames110@gmail.com?subject=Hello There">
+                     <Envelope/>
+                  </a>
+               </div>
+               <div className="icon-wrapper" id="github">
                   <a
                      href="https://github.com/olivajames110"
                      target="_blank"
                      rel="noopener noreferrer">
-                     Github
+                     <Github/>
                   </a>
                </div>
-               <div className="icon" id="linked-in">
+               <div className="icon-wrapper" id="linked-in">
                   <a
                      href="https://www.linkedin.com/in/james-oliva-2a5725148/"
                      target="_blank"
                      rel="noopener noreferrer">
-                     LinkedIn
+                     <LinkedIn/>
                   </a>
                </div>
             </div>
-         </div>
+         </section>
+         <section id="copyright">Copyright ©2020 Jimmy Oliva</section>
       </footer>
    );
 };
