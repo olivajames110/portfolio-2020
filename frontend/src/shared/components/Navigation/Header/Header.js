@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import {ReactComponent as Logo} from '../../../icons/logo.svg';
 import {ReactComponent as Hamburger} from '../../../icons//hamburger/hamburger.svg';
 import {ReactComponent as Jlogo} from '../../../svgs/jlogo.svg';
+import {ReactComponent as JlogoGradient} from '../../../svgs/jlogo-gradient.svg';
 import Nav from '../Nav/Nav';
 import NavLinksList from '../NavLinksList/NavLinksList';
 import NavLinkItem from '../NavLinkItem/NavLinkItem';
@@ -33,7 +34,7 @@ const Header = (props) => {
          <header>
             <div className="header-inner-wrapper">
                <NavLinkItem to="/">
-                  <Jlogo/>
+                  <JlogoGradient/>
                </NavLinkItem>
                <Nav id="desktop-nav">
                   <NavLinksList/>

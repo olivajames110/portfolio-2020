@@ -14,10 +14,13 @@ footer .curve {
 }
 
 footer .curve svg {
-  display: block;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  z-index: 11;
+  width: 150%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
 }
 
 footer .curve svg path {
@@ -29,8 +32,7 @@ footer .inner-wrapper {
 }
 
 footer .inner-wrapper #j-logo {
-  width: 60px;
-  margin: 30px 0;
+  width: 32px;
 }
 
 footer .inner-wrapper #j-logo path {
