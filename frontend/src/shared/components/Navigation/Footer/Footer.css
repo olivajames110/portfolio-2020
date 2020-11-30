@@ -1,26 +1,17 @@
 footer {
   width: 100%;
-  color: #ffffff;
+  color: var(--darkGray);
   text-align: center;
-}
-
-footer section {
-  background-color: var(--darkGray);
 }
 
 footer .curve {
   background: white;
   position: relative;
+  overflow: hidden;
 }
 
 footer .curve svg {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  z-index: 11;
-  width: 150%;
-  -webkit-transform: translatex(-50%);
-          transform: translatex(-50%);
+  display: block;
 }
 
 footer .curve svg path {
@@ -28,19 +19,27 @@ footer .curve svg path {
 }
 
 footer .inner-wrapper {
-  padding: 30px 15px;
+  padding: 70px 15px;
+  max-width: var(--pageMaxWidth);
+  margin: 0 auto;
+  position: relative;
 }
 
-footer .inner-wrapper #j-logo {
-  width: 32px;
-}
-
-footer .inner-wrapper #j-logo path {
-  fill: #fff !important;
+footer .inner-wrapper:after {
+  content: '';
+  border-top: 1px solid var(--gray);
+  width: 95%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
 }
 
 footer .inner-wrapper h3 {
   margin: 20px 0;
+  font-weight: 500;
+  font-size: 22px;
 }
 
 footer .inner-wrapper .icons-container {
@@ -54,7 +53,7 @@ footer .inner-wrapper .icons-container .icon-wrapper {
 
 footer .inner-wrapper .icons-container .icon-wrapper a {
   margin: 10px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--gray);
   width: 50px;
   height: 50px;
   display: -webkit-box;
@@ -83,7 +82,8 @@ footer .inner-wrapper .icons-container .icon-wrapper svg {
 }
 
 footer #copyright {
-  background-color: #171717;
+  background-color: var(--orange);
+  color: #ffffff;
   padding: 25px;
   font-size: 12px;
 }

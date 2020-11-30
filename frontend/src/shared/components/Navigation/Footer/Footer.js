@@ -1,6 +1,6 @@
 import React from 'react';
-import {ReactComponent as BottomCurve} from '../../../svgs/bottom-curve.svg';
-import {ReactComponent as JLogo} from '../../../svgs/jlogo.svg';
+import {ReactComponent as BottomCurve} from '../../../svgs/curvedBackground.svg';
+import {ReactComponent as JLogo} from '../../../svgs/jlogo-gradient.svg';
 import {ReactComponent as LinkedIn} from '../../../icons/linkedin.svg';
 import {ReactComponent as Envelope} from '../../../icons/envelope.svg';
 import {ReactComponent as Github} from '../../../icons/github.svg';
@@ -10,14 +10,8 @@ import './Footer.css';
 const Footer = () => {
    return (
       <footer>
-         <div className="curve">
-            <BottomCurve/>
-         </div>
          <section className="inner-wrapper">
-            <div id="name">
-               <JLogo/>
-               <h3>Want to get in touch? Let's Talk</h3>
-            </div>
+            <h3>Want to get in touch? Let's Talk</h3>
             <div className="icons-container">
                <div className="icon-wrapper" id="email">
                   <a href="mailto:olivajames110@gmail.com?subject=Hello There">
@@ -42,6 +36,9 @@ const Footer = () => {
                </div>
             </div>
          </section>
+         <div className="curve">
+            <BottomCurve/>
+         </div>
          <section id="copyright">Copyright ©2020 Jimmy Oliva</section>
       </footer>
    );

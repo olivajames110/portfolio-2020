@@ -33,7 +33,7 @@ code {
 }
 
 :root {
-	--orange: #ff5533;
+	--orange: #ff4a01;
 	--red: #ea4335;
 	--blue: #002d72;
 	--blueText: #35578d;
@@ -41,6 +41,7 @@ code {
 	--green: #1fb57b;
 	--darkGreen: #129b6a;
 	--darkGray: #212121;
+	--gray: #c6c6cc;
 	--lightGreen: #85d3bd;
 	--yellow: #fddf71;
 	--darkYellow: #d7b258;
