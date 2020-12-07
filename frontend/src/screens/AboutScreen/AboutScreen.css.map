@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,OAAO,AAAA,MAAM,CAAC;EACb,QAAQ,EAAE,QAAQ;CAIlB;;AALD,AAEC,OAFM,AAAA,MAAM,CAEZ,CAAC,CAAC;EACD,MAAM,EAAE,MAAM;CACd",
     "sources": [
         "AboutScreen.scss"
     ],

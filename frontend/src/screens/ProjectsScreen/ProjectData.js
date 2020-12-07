@@ -7,6 +7,7 @@ import travelMap from './ProjectImages/travelMap.png';
 import truCircle from './ProjectImages/truCircle2.png';
 import ooSuccess from './ProjectImages/ooSuccess2.png';
 import laNovaTimeline from './ProjectImages/laNovaTimeline.png';
+import Waypoint from './ProjectImages/waypoint.jpg';
 
 export const projectData = {
 		websites: [
@@ -75,6 +76,15 @@ export const projectData = {
 						technology: 'Single-page application built using Create React App utilizing React JS, SCSS, a' +
 										'nd Firebase for hosting.',
 						url: 'https://olivajames110.github.io/fip-calculator/',
+						github: 'https://github.com/olivajames110/mern',
+						group: 'projectsforpeople'
+				}, {
+						image: Waypoint,
+						title: 'Waypoint Dashboard',
+						description: 'A mocked up prototype of an example dashboard for restaurant owners.',
+						technology: 'Single-page application built using Create React App utilizing React JS, SCSS, a' +
+										'nd Firebase for hosting.',
+						url: 'https://waypoint-oz-dashboard.web.app/',
 						github: 'https://github.com/olivajames110/mern',
 						group: 'projectsforpeople'
 				}, {

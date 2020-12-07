@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=AboutScreen.css.map */
+section#about {
+  position: relative;
+}
+
+section#about p {
+  margin: 20px 0;
+}
+/*# sourceMappingURL=AboutScreen.css.map */

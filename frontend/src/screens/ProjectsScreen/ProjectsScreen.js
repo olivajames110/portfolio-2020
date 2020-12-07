@@ -7,6 +7,7 @@ import DevicePreview from './DevicePreview/DevicePreview';
 import ProjectSwitcher from './ProjectSwitcher/ProjectSwitcher';
 import {projectData} from './ProjectData';
 import PageHeaderImage from '../../shared/components/UIElements/PageHeaderImage/PageHeaderImage';
+import ProjectScreenHeaderImage from '../../shared/images/code-background.jpg';
 
 import './ProjectsScreen.css';
 
@@ -73,17 +74,10 @@ const ProjectsScreen = () => {
 						)}
 				</React.Fragment>
 		);
-		// const mobileProjectList = ( 	<div className="featured-project__secondary">
-		// 		<HorizontalScroll> 			{projectData[projectGroup].map((p) => ( 				<Project
-		// 					image={p.image} 					title={p.title} 					description={p.description}
-		// 					technology={p.technology} 					frameworks={p.frameworks}
-		// 					url={p.url} 					github={p.github}
-		// 					handleProjectPreview={handleProjectPreview} 				/> 			))}
-		// 		</HorizontalScroll> 	</div> );
 
 		return (
 				<React.Fragment>
-						<PageHeaderImage title="My Projects"/>
+						<PageHeaderImage image={ProjectScreenHeaderImage} title="My Projects"/>
 
 						<Main>
 								<DevicePreview

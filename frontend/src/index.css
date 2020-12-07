@@ -36,7 +36,7 @@ code {
 	--orange: #ff4a01;
 	--red: #ea4335;
 	--blue: #002d72;
-	--blueText: #35578d;
+	--blueText: #002d72;
 	--darkBlue: #557dbf;
 	--green: #1fb57b;
 	--darkGreen: #129b6a;
@@ -58,7 +58,7 @@ code {
 	--nunito: 'Nunito', sans-serif;
 	--lato: 'Lato', sans-serif;
 	--jost: 'Jost', sans-serif;
-	--headerHeight: 80px;
+	--headerHeight: 70px;
 }
 
 body,
