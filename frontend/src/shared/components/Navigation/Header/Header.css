@@ -8,7 +8,7 @@ header {
           box-shadow: var(--boxShadow);
   z-index: 1111;
   height: var(--headerHeight);
-  background: #ffffff;
+  background: #ffffffe7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +64,11 @@ nav ul {
 
 nav .nav-item-wrapper {
   margin: 0 2em;
-  font-size: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #676666;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 nav .nav-item-wrapper:hover {

@@ -2,6 +2,8 @@ footer {
   width: 100%;
   color: var(--darkGray);
   text-align: center;
+  -webkit-box-shadow: 0 0 3px 2px #00000014;
+          box-shadow: 0 0 3px 2px #00000014;
 }
 
 footer .curve {
@@ -23,17 +25,6 @@ footer .inner-wrapper {
   max-width: var(--pageMaxWidth);
   margin: 0 auto;
   position: relative;
-}
-
-footer .inner-wrapper:after {
-  content: '';
-  border-top: 1px solid var(--gray);
-  width: 95%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translatex(-50%);
-          transform: translatex(-50%);
 }
 
 footer .inner-wrapper h3 {

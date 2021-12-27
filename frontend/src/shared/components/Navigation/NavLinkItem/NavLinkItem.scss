@@ -1,14 +1,15 @@
 .nav-link__active {
-	position: relative;
-	color: var(--blueText);
-	&:after {
-		content: '';
-		position: absolute;
-		bottom: -4px;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 110%;
-		height: 2px;
-		background-color: var(--blue);
-	}
+  position: relative;
+  color: var(--blueText);
+  font-weight: 700;
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: -26px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   width: 110%;
+  //   height: 2px;
+  //   background-color: var(--blue);
+  // }
 }

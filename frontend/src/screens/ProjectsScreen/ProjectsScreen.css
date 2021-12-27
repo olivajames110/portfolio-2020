@@ -3,6 +3,11 @@ h1 {
   font-weight: 600;
 }
 
+#featured-projects {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
 .project-list-container {
   overflow: auto;
   -ms-scroll-snap-type: x mandatory;
@@ -10,8 +15,8 @@ h1 {
 }
 
 .project-list-container .project-item__image .img-wrapper img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .featured-project__secondary {

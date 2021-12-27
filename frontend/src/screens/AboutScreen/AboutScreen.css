@@ -1,5 +1,21 @@
 section#about {
   position: relative;
+  padding: 60px 0;
+  width: 800px;
+  height: calc(100vh - var(--headerHeight));
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#about h2 {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1.4em;
 }
 
 section#about p {

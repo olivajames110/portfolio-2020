@@ -1,6 +1,17 @@
 section#about {
-	position: relative;
-	p {
-		margin: 20px 0;
-	}
+  position: relative;
+  padding: 60px 0;
+  width: 800px;
+  height: calc(100vh - var(--headerHeight));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  h2 {
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.4em;
+  }
+  p {
+    margin: 20px 0;
+  }
 }

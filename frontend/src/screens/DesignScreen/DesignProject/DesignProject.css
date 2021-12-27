@@ -1,0 +1,101 @@
+.design-project-item-container {
+  width: 100%;
+  font-size: 12px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 70px 0;
+}
+
+.design-project-item-container .design-project__image {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  max-width: 924px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85vh;
+  max-height: 620px;
+  border-radius: 2px;
+}
+
+.design-project-item-container .design-project__image img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+.design-project-item-container .design-project__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4.5rem 3.2rem;
+  width: 100%;
+  max-width: 640px;
+  z-index: 111;
+  border-radius: 2px;
+}
+
+.design-project-item-container .design-project__content .design-project-inner-content {
+  width: 100%;
+}
+
+.design-project-item-container .design-project__content .design-project-inner-content .company {
+  font-size: 13px;
+  opacity: 0.65;
+}
+
+.design-project-item-container .design-project__content .design-project-inner-content h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 32px;
+  line-height: 1.5em;
+  margin-top: 5px;
+}
+
+.design-project-item-container .design-project__content .design-project-inner-content p.description {
+  margin-top: 15px;
+  max-width: 440px;
+}
+
+.design-project-item-container .design-project__content .design-project-inner-content .content-container {
+  margin-top: 80px;
+}
+
+.design-project-item-container .design-project__content .design-project-inner-content .content-container h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+  .project-item-container .project-item__image .featured.img-wrapper {
+    height: 200px !important;
+  }
+  .project-item-container .project-item__image .img-wrapper {
+    height: 165px !important;
+  }
+}
+/*# sourceMappingURL=DesignProject.css.map */
