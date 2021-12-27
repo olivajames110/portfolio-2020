@@ -2,8 +2,8 @@ footer {
   width: 100%;
   color: var(--darkGray);
   text-align: center;
-  -webkit-box-shadow: 0 0 3px 2px #00000014;
-          box-shadow: 0 0 3px 2px #00000014;
+  -webkit-box-shadow: 0 0 1px 1px #00000014;
+          box-shadow: 0 0 1px 1px #00000014;
 }
 
 footer .curve {
@@ -27,10 +27,10 @@ footer .inner-wrapper {
   position: relative;
 }
 
-footer .inner-wrapper h3 {
-  margin: 20px 0;
+footer .inner-wrapper h2 {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18px;
+  color: #494949;
 }
 
 footer .inner-wrapper .icons-container {
@@ -44,9 +44,9 @@ footer .inner-wrapper .icons-container .icon-wrapper {
 
 footer .inner-wrapper .icons-container .icon-wrapper a {
   margin: 10px;
-  border: 1px solid var(--gray);
-  width: 50px;
-  height: 50px;
+  color: #494949;
+  width: 48px;
+  height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +73,7 @@ footer .inner-wrapper .icons-container .icon-wrapper svg {
 }
 
 footer #copyright {
-  background-color: var(--orange);
+  background-color: #0f2f6c;
   color: #ffffff;
   padding: 25px;
   font-size: 12px;
