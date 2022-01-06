@@ -227,7 +227,7 @@ export const projectData = {
   forfun: [
     {
       image: fuku,
-      title: "Fuku Claw Game",
+      title: "Claw Machine Game",
       description:
         "Play and operate a real claw machine from your computer or phone!",
       technology: "HTML, CSS, Typescript, Socket.io, Reddis, Redux, Discord.js",

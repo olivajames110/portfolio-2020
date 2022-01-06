@@ -5,6 +5,7 @@ import catpurrccinos from "../images/catpurrccinos.jpg";
 import eoy from "../images/eoy.jpg";
 import hoopdreamsLogo from "../images/hoopdreams.jpg";
 import hoopdreamsFlyer from "../images/hoopdreams-flyer.jpg";
+import bbalCard from "../images/bball-card.jpg";
 
 export const designProjectData = [
   {
@@ -69,5 +70,14 @@ export const designProjectData = [
       "Entire website built and managed for a Full-service Digital Marketing & Website " +
       "company tailored for Restaurants and small businesses. ",
     technology: "Adobe Photoshop, Adobe XD",
+  },
+  {
+    image: bbalCard,
+    company: "Hoopdreams Basketball Team",
+    title: "Tryout Invitation",
+    description:
+      "Entire website built and managed for a Full-service Digital Marketing & Website " +
+      "company tailored for Restaurants and small businesses. ",
+    technology: "Adobe Photoshop, Adobe Illustrator",
   },
 ];

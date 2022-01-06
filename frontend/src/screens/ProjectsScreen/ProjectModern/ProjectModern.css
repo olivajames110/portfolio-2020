@@ -118,9 +118,8 @@
 }
 
 .modern-project-item-container .modern-project__content .modern-project-inner-content h2 {
-  text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1.5em;
 }
 

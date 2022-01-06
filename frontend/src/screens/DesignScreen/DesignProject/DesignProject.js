@@ -24,7 +24,8 @@ const DesignProject = (props) => {
       }`}
     >
       <div className="design-project-inner-content">
-        <span className="company">Business: {props.company}</span>
+        <span className="company">{props.company}</span>
+        {/* <span className="company">Business: {props.company}</span> */}
         <h2>{props.title}</h2>
         <p className="description">{props.description}</p>
         <div className="content-container">

@@ -3,53 +3,36 @@
   font-size: 12px;
   position: relative;
   // display: flex;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   //   margin-bottom: 100px;
   align-items: center;
   justify-content: center;
   // height: 100vh;
   padding: 70px 0;
 
-  .design-project__image {
-    position: relative;
-    display: flex;
-    width: 100%;
-    flex-basis: 40%;
-    max-width: 924px;
-    align-items: center;
-    height: 85vh;
-    max-height: 620px;
-    border-radius: 2px;
-
-    img {
-      display: block;
-      object-fit: cover;
-      height: fit-content;
-      width: 100%;
-    }
-  }
-
   .design-project__content {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4.5rem 3.2rem;
+    // padding: 4.5rem 3.2rem;
     width: 100%;
     max-width: 640px;
     z-index: 111;
     border-radius: 2px;
-
+    margin: 30px auto;
     .design-project-inner-content {
-      width: 100%;
+      // width: 100%;
       // max-width: 500px;
       .company {
         font-size: 13px;
         opacity: 0.65;
       }
       h2 {
-        text-transform: uppercase;
+        // text-transform: uppercase;
         letter-spacing: 2px;
-        font-size: 32px;
+        font-size: 42px;
+        // font-size: 44px;
         //   font-size: 28px;
         line-height: 1.5em;
         margin-top: 5px;
@@ -70,15 +53,38 @@
       }
     }
   }
+
+  .design-project__image {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-basis: 40%;
+    max-width: 524px;
+    align-items: center;
+    // height: 85vh;
+    height: 100%;
+    max-height: 620px;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    img {
+      display: block;
+      object-fit: cover;
+      height: fit-content;
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: 650px) {
-  .project-item-container .project-item__image .featured {
-    &.img-wrapper {
-      height: 200px !important;
+  .design-project-item-container {
+    grid-template-columns: 1fr;
+    .design-project-inner-content h2 {
+      font-size: 28px !important;
     }
-  }
-  .project-item-container .project-item__image .img-wrapper {
-    height: 165px !important;
+    .content-container {
+      margin-top: 40px !important;
+    }
   }
 }
