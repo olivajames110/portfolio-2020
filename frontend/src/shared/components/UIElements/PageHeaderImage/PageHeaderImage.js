@@ -1,6 +1,6 @@
 import React from "react";
 import "./PageHeaderImage.css";
-import BackgroundImage from "../../../images/code-background.jpg";
+
 const PageHeaderImage = (props) => {
   const styles = {
     background: `url(${props.image})`,

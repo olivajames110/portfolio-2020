@@ -6,7 +6,7 @@ import { isMobile } from "react-device-detect";
 
 import { designProjectData } from "./DesignProject/DesignProjectData";
 import PageHeaderImage from "../../shared/components/UIElements/PageHeaderImage/PageHeaderImage";
-import DesignScreenHeaderImage from "../../shared/images/design-backgrounnd.jpg";
+import DesignScreenHeaderImage from "../../shared/images/pageHeaders/design-backgrounnd.jpg";
 
 import "./DesignScreen.css";
 import DesignProject from "./DesignProject/DesignProject";

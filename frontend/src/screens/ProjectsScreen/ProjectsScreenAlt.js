@@ -7,7 +7,7 @@ import DevicePreview from "./DevicePreview/DevicePreview";
 import ProjectSwitcher from "./ProjectSwitcher/ProjectSwitcher";
 import { projectData } from "./ProjectData";
 import PageHeaderImage from "../../shared/components/UIElements/PageHeaderImage/PageHeaderImage";
-import ProjectScreenHeaderImage from "../../shared/images/code-background.jpg";
+import ProjectScreenHeaderImage from "../../shared/images/pageHeaders/code-background.jpg";
 
 import "./ProjectsScreen.css";
 import ProjectModern from "./ProjectModern/ProjectModern";

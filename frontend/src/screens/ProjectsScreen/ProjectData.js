@@ -1,19 +1,19 @@
-import baseballCardBuilder from "./ProjectImages/baseballCardBuilder.png";
-import cattery from "./ProjectImages/cattery.png";
-import fipCalc from "./ProjectImages/fipCalc.png";
-import ooComparison from "./ProjectImages/ooComparison.png";
-import ordereze from "./ProjectImages/ordereze.png";
-import grillmarx from "./ProjectImages/grillmarx.png";
-import truCircle from "./ProjectImages/truCircle2.png";
-import ooSuccess from "./ProjectImages/ooSuccess2.png";
-import laNovaTimeline from "./ProjectImages/laNovaTimeline.png";
-import Waypoint from "./ProjectImages/waypoint.jpg";
-import fuku from "./ProjectImages/fuku.png";
-import domainLookup from "./ProjectImages/domainLookup.png";
-import itc from "./ProjectImages/itc.png";
-import sharkii from "./ProjectImages/sharkii.png";
-import wheelSpin from "./ProjectImages/wheelSpin.png";
-import singularity from "./ProjectImages/singularity.png";
+import baseballCardBuilder from "../../shared/images/projectThumbnails/projects/baseballCardBuilder.png";
+import cattery from "../../shared/images/projectThumbnails/projects/cattery.png";
+import fipCalc from "../../shared/images/projectThumbnails/projects/fipCalc.png";
+import ooComparison from "../../shared/images/projectThumbnails/projects/ooComparison.png";
+import ordereze from "../../shared/images/projectThumbnails/projects/ordereze.png";
+import grillmarx from "../../shared/images/projectThumbnails/projects/grillmarx.png";
+import truCircle from "../../shared/images/projectThumbnails/projects/truCircle2.png";
+import ooSuccess from "../../shared/images/projectThumbnails/projects/ooSuccess2.png";
+import laNovaTimeline from "../../shared/images/projectThumbnails/projects/laNovaTimeline.png";
+import Waypoint from "../../shared/images/projectThumbnails/projects/waypoint.jpg";
+import fuku from "../../shared/images/projectThumbnails/projects/fuku.png";
+import domainLookup from "../../shared/images/projectThumbnails/projects/domainLookup.png";
+import itc from "../../shared/images/projectThumbnails/projects/itc.png";
+import sharkii from "../../shared/images/projectThumbnails/projects/sharkii.png";
+import wheelSpin from "../../shared/images/projectThumbnails/projects/wheelSpin.png";
+import singularity from "../../shared/images/projectThumbnails/projects/singularity.png";
 
 export const projectData = {
   websites: [

@@ -1,11 +1,11 @@
-import catman from "../images/catman.jpg";
-import breakingBad from "../images/breaking-bad.jpg";
-import rugcats from "../images/rugcats.jpg";
-import catpurrccinos from "../images/catpurrccinos.jpg";
-import eoy from "../images/eoy.jpg";
-import hoopdreamsLogo from "../images/hoopdreams.jpg";
-import hoopdreamsFlyer from "../images/hoopdreams-flyer.jpg";
-import bbalCard from "../images/bball-card.jpg";
+import catman from "../../../shared/images/projectThumbnails/design/catman.jpg";
+import breakingBad from "../../../shared/images/projectThumbnails/design/breaking-bad.jpg";
+import rugcats from "../../../shared/images/projectThumbnails/design/rugcats.jpg";
+import catpurrccinos from "../../../shared/images/projectThumbnails/design/catpurrccinos.jpg";
+import eoy from "../../../shared/images/projectThumbnails/design/eoy.jpg";
+import hoopdreamsLogo from "../../../shared/images/projectThumbnails/design/hoopdreams.jpg";
+import hoopdreamsFlyer from "../../../shared/images/projectThumbnails/design/hoopdreams-flyer.jpg";
+import bbalCard from "../../../shared/images/projectThumbnails/design/bball-card.jpg";
 
 export const designProjectData = [
   {
