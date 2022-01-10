@@ -41,7 +41,6 @@ aside.side-drawer #cross-wrapper {
 
 aside.side-drawer #cross-wrapper #times-icon {
   color: #1c1c1c;
-  z-index: 111;
   display: block;
   height: 100%;
 }
