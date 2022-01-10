@@ -52,6 +52,15 @@ section#about {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  section#about {
+    grid-template-columns: 1fr;
+    .about-inner-wrapper .about__content h2 {
+      font-size: 42px;
+    }
+  }
+}
+
 // Graphic
 .a5bc420a-77d1-4260-b8e4-ecc2bb7a7d0f,
 .b10cad2f-5bdc-4c3a-8d06-ea6c5ec54f4b,
