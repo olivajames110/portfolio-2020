@@ -40,7 +40,9 @@ aside.side-drawer {
       //   width: 16px;
       color: #1c1c1c;
       z-index: 111;
-      transform: translateX(15px);
+      display: block;
+      height: 100%;
+      //   transform: translateX(15px);
     }
 
     #close-button-background {

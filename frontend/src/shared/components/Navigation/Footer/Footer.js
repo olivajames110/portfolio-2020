@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer>
       <section className="inner-wrapper">
-        <h2>How to get in contact with me!</h2>
+        <h2>Get in contact with me!</h2>
         <div className="icons-container">
           <div className="icon-wrapper" id="email">
             <a href="mailto:olivajames110@gmail.com?subject=Hello There">

@@ -42,8 +42,8 @@ aside.side-drawer #cross-wrapper {
 aside.side-drawer #cross-wrapper #times-icon {
   color: #1c1c1c;
   z-index: 111;
-  -webkit-transform: translateX(15px);
-          transform: translateX(15px);
+  display: block;
+  height: 100%;
 }
 
 aside.side-drawer #cross-wrapper #close-button-background {
