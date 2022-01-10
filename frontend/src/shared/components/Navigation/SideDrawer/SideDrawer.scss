@@ -1,126 +1,127 @@
 aside.side-drawer {
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 100000;
-	height: 100vh;
-	width: 80%;
-	background: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100000;
+  height: 100vh;
+  width: 100%;
+  background: white;
 
-	.mobile-header {
-		position: absolute;
-		top: 20px;
-		left: 50%;
-		transform: translateX(-50%);
-		svg {
-			width: 50px;
-		}
-	}
+  .mobile-header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    svg {
+      width: 50px;
+    }
+  }
 
-	#cross-wrapper {
-		position: absolute;
-		right: -10px;
-		top: 50%;
-		transform: translateY(-50%);
-		background: white;
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+  #cross-wrapper {
+    position: absolute;
+    right: 44px;
+    top: 34px;
+    // top: 50%;
+    // transform: translateY(-50%);
+    background: #ffffff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-		// svg {
-		// 	width: 16px;
-		// 	color: #1c1c1c;
-		// }
+    // svg {
+    // 	width: 16px;
+    // 	color: #1c1c1c;
+    // }
 
-		#times-icon {
-			width: 16px;
-			color: #1c1c1c;
-			z-index: 111;
-			transform: translateX(15px);
-		}
+    #times-icon {
+      //   width: 16px;
+      color: #1c1c1c;
+      z-index: 111;
+      transform: translateX(15px);
+    }
 
-		#close-button-background {
-			fill: red;
-			width: 30px;
-			position: absolute;
-			left: 0;
-			transform: translateX(29px);
-			z-index: 10;
-		}
-	}
+    #close-button-background {
+      fill: red;
+      width: 30px;
+      position: absolute;
+      left: 0;
+      transform: translateX(29px);
+      z-index: 10;
+    }
+  }
 
-	.nav-links {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-		li {
-			margin: 30px 0;
-			width: 120%;
-			a {
-				display: flex;
-				color: #757575;
-				span {
-					font-size: 23px;
-					line-height: 1.4em;
-				}
-				#logout {
-					padding: 0.2rem 1.2rem;
-				}
-			}
-		}
+    li {
+      margin: 30px 0;
+      width: 120%;
+      a {
+        display: flex;
+        color: #757575;
+        span {
+          font-size: 23px;
+          line-height: 1.4em;
+        }
+        #logout {
+          padding: 0.2rem 1.2rem;
+        }
+      }
+    }
 
-		.nav-link-icon,
-		.nav-link__active {
-			display: flex;
-			align-items: center;
-			// flex-direction: column;
-			svg {
-				height: 24px;
-				margin-right: 15px;
-				max-width: 22px;
-				min-width: 18px;
-			}
-		}
-		/* justify-content: center; */
-	}
-	.main-navigation__drawer-nav {
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+    .nav-link-icon,
+    .nav-link__active {
+      display: flex;
+      align-items: center;
+      // flex-direction: column;
+      svg {
+        height: 24px;
+        margin-right: 15px;
+        max-width: 22px;
+        min-width: 18px;
+      }
+    }
+    /* justify-content: center; */
+  }
+  .main-navigation__drawer-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 //CSS ANIMATIONS
 
 .sidenav-enter {
-	// opacity: 0;
-	transform: translateX(-120%);
-	transition: transform 500ms;
+  // opacity: 0;
+  transform: translateX(-120%);
+  transition: transform 500ms;
 }
 .sidenav-enter-active {
-	// opacity: 1;
-	transform: translateX(0);
-	// transform: translateX(0);
-	transition: transform 500ms;
+  // opacity: 1;
+  transform: translateX(0);
+  // transform: translateX(0);
+  transition: transform 500ms;
 }
 .sidenav-exit {
-	// opacity: 1;
-	transform: translateX(-120%);
-	transition: transform 500ms;
+  // opacity: 1;
+  transform: translateX(-120%);
+  transition: transform 500ms;
 }
 .sidenav-exit-active {
-	// opacity: 0;
-	transform: translateX(-120%);
-	transition: transform 500ms;
+  // opacity: 0;
+  transform: translateX(-120%);
+  transition: transform 500ms;
 }
 
 @media only screen and (min-width: 600px) {
-	.nav-link-icon {
-		display: none !important;
-	}
+  .nav-link-icon {
+    display: none !important;
+  }
 }

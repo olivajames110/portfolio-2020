@@ -146,11 +146,30 @@
 }
 
 @media only screen and (max-width: 650px) {
-  .project-item-container .project-item__image .featured.img-wrapper {
-    height: 200px !important;
+  .modern-project-item-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    margin-top: 70px;
   }
-  .project-item-container .project-item__image .img-wrapper {
-    height: 165px !important;
+  .modern-project-item-container .modern-project__image {
+    height: 240px;
+  }
+  .modern-project-item-container .modern-project__content {
+    position: relative;
+    margin-top: -10%;
+    padding: 3.5rem 1.4rem;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    width: 96%;
+  }
+  .modern-project-item-container .modern-project__content .modern-project-inner-content h2 {
+    font-size: 22px;
+  }
+  .modern-project-item-container .modern-project__content .modern-project-inner-content .content-container {
+    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=ProjectModern.css.map */

@@ -113,7 +113,7 @@ nav .sidedrawer-toggle-button svg {
     text-align: center;
   }
   nav#side-drawer-nav li {
-    margin: 24px 0;
+    margin-bottom: 60px;
     font-size: 24px;
   }
 }
