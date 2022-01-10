@@ -38,6 +38,7 @@ section#about .about__graphic {
   display: flex;
   -ms-flex-preferred-size: 600px;
       flex-basis: 600px;
+  width: 100%;
   max-height: 80vh;
 }
 

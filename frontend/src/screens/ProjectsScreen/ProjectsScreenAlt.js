@@ -64,23 +64,6 @@ const ProjectsScreenAlt = () => {
               inverse={i % 2 == 0 ? false : true}
             />
           ))}
-          <h2>Other Projects</h2>
-          <div className="small-project-wrapper">
-            {allProjectList.map((p, i) => (
-              <DesignProject
-                image={p.image}
-                title={p.title}
-                description={p.description}
-                technology={p.technology}
-                frameworks={p.frameworks}
-                url={p.url}
-                github={p.github}
-                isFeatured={p.isFeatured}
-                handleProjectPreview={handleProjectPreview}
-                inverse={i % 2 == 0 ? false : true}
-              />
-            ))}
-          </div>
         </section>
       </Main>
     </React.Fragment>
