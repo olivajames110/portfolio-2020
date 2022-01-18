@@ -30,7 +30,13 @@ const DesignProject = (props) => {
         <p className="description">{props.description}</p>
         <div className="content-container">
           <h3>Technology Used</h3>
-          <div>{props.technology}</div>
+          <div className="logo-container">
+            {props.logos.map((f) => (
+              <div className="logo-wrapper">
+                <img src={f} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -53,6 +53,41 @@
   margin-top: 80px;
 }
 
+.design-project-item-container .design-project__content .design-project-inner-content .content-container .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.design-project-item-container .design-project__content .design-project-inner-content .content-container .logo-container .logo-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* width: 100%; */
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-right: 40px;
+  /* max-width: 160px; */
+  /* flex-wrap: wrap; */
+  height: 50px;
+}
+
+.design-project-item-container .design-project__content .design-project-inner-content .content-container .logo-container .logo-wrapper img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .design-project-item-container .design-project__content .design-project-inner-content .content-container h3 {
   font-size: 14px;
   font-weight: bold;

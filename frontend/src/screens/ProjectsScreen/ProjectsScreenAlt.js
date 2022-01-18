@@ -62,6 +62,8 @@ const ProjectsScreenAlt = () => {
               isFeatured={p.isFeatured}
               handleProjectPreview={handleProjectPreview}
               inverse={i % 2 == 0 ? false : true}
+              features={p.features}
+              logos={p.logos}
             />
           ))}
         </section>

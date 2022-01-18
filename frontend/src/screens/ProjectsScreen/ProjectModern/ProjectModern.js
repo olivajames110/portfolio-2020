@@ -110,23 +110,13 @@ const ProjectModern = (props) => {
         <h2>{props.title}</h2>
         <p className="description">{props.description}</p>
         <div className="content-container">
-          <h3>Notable Attributes:</h3>
-          <div className="grid-3">
-            <div className="content-container-col">
-              <div>Item</div>
-              <div>Item</div>
-              <div>Item</div>
-            </div>
-            <div className="content-container-col">
-              <div>Item</div>
-              <div>Item</div>
-              <div>Item</div>
-            </div>
-            <div className="content-container-col">
-              <div>Item</div>
-              <div>Item</div>
-              <div>Item</div>
-            </div>
+          <h3>Features:</h3>
+          <div className="logo-container">
+            {props.logos.map((f) => (
+              <div className="logo-wrapper">
+                <img src={f} />
+              </div>
+            ))}
           </div>
         </div>
       </div>

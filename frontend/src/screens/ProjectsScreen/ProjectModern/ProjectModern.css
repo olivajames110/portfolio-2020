@@ -64,7 +64,7 @@
 
 .modern-project-item-container .modern-project__content {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: #ffffff;
   z-index: 111;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,6 +130,42 @@
 
 .modern-project-item-container .modern-project__content .modern-project-inner-content .content-container {
   margin-top: 80px;
+}
+
+.modern-project-item-container .modern-project__content .modern-project-inner-content .content-container .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modern-project-item-container .modern-project__content .modern-project-inner-content .content-container .logo-container .logo-wrapper {
+  position: relative;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* width: 100%; */
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-right: 40px;
+  /* max-width: 160px; */
+  /* flex-wrap: wrap; */
+  height: 32px;
+}
+
+.modern-project-item-container .modern-project__content .modern-project-inner-content .content-container .logo-container .logo-wrapper img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .modern-project-item-container .modern-project__content .modern-project-inner-content .content-container h3 {

@@ -1,3 +1,4 @@
+import React, { useState, useRef, useEffect } from "react";
 import baseballCardBuilder from "../../shared/images/projectThumbnails/projects/baseballCardBuilder.png";
 import cattery from "../../shared/images/projectThumbnails/projects/cattery.png";
 import fipCalc from "../../shared/images/projectThumbnails/projects/fipCalc.png";
@@ -5,7 +6,7 @@ import ooComparison from "../../shared/images/projectThumbnails/projects/ooCompa
 import ordereze from "../../shared/images/projectThumbnails/projects/ordereze.png";
 import grillmarx from "../../shared/images/projectThumbnails/projects/grillmarx.png";
 import truCircle from "../../shared/images/projectThumbnails/projects/truCircle2.png";
-import ooSuccess from "../../shared/images/projectThumbnails/projects/ooSuccess2.png";
+import rewards from "../../shared/images/projectThumbnails/projects/rewards.png";
 import laNovaTimeline from "../../shared/images/projectThumbnails/projects/laNovaTimeline.png";
 import Waypoint from "../../shared/images/projectThumbnails/projects/waypoint.jpg";
 import fuku from "../../shared/images/projectThumbnails/projects/fuku.png";
@@ -15,22 +16,28 @@ import sharkii from "../../shared/images/projectThumbnails/projects/sharkii.png"
 import wheelSpin from "../../shared/images/projectThumbnails/projects/wheelSpin.png";
 import singularity from "../../shared/images/projectThumbnails/projects/singularity.png";
 
+// import node from "../../shared/logos/node.jpg";
+import react from "../../shared/logos/react.png";
+import mui from "../../shared/logos/mui.png";
+import saas from "../../shared/logos/saas.png";
+import redux from "../../shared/logos/redux.png";
+import node from "../../shared/logos/node.png";
+import express from "../../shared/logos/express.png";
+import mongo from "../../shared/logos/mongo.png";
+import mongoose from "../../shared/logos/mongoose.png";
+import xd from "../../shared/logos/xd.png";
+import ps from "../../shared/logos/ps.jpg";
+import ai from "../../shared/logos/ai.jpg";
+import css from "../../shared/logos/css.png";
+import html from "../../shared/logos/html.png";
+import js from "../../shared/logos/js.png";
+import socket from "../../shared/logos/socket.png";
+import discord from "../../shared/logos/discord.png";
+import redis from "../../shared/logos/redis.png";
+import typescript from "../../shared/logos/typescript.png";
+
 export const projectData = {
   websites: [
-    // { 	image       :
-    // 'https://digitalmarketing.blob.core.windows.net/10042/images/items/image67427
-    // 1 .png', 	title       : 'Millhouse Brewing', 	description : 'Create an
-    // account and store your favorite locations or places you have visited.',
-    // 	technology : 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API', 	url :
-    // 'https://olivajames110.github.io/online-ordering-price-comparison/', 	github
-    // : 'https://github.com/olivajames110/mern', 	group       : 'websites' }, {
-    // 	image       :
-    // 'https://digitalmarketing.blob.core.windows.net/5587/images/items/image608624
-    // . jpg', 	title       : 'Benvenuto Cafe', 	description : 'Create an account
-    // and store your favorite locations or places you have visited.', 	technology :
-    // 'HTML, CSS, Javascript, Node JS, Mongo DB, Google API', 	 	url         :
-    // 'https://olivajames110.github.io/online-ordering-price-comparison/', 	github
-    // : 'https://github.com/olivajames110/mern', 	group       : 'websites' },
     {
       image: ordereze,
       title: "Ordereze Homepage",
@@ -42,6 +49,8 @@ export const projectData = {
         "ding process Heavily incorpates plain HTML, CSS, and JS.",
       url: "http://ordereze.com/",
       github: "https://github.com/olivajames110/mern",
+      features: ["SCSS", "React JS"],
+      logos: [saas, react, node],
       group: "websites",
     },
     {
@@ -55,6 +64,8 @@ export const projectData = {
         "ding process Heavily incorpates plain HTML, CSS, and JS.",
       url: "https://grillmarx.web.app/",
       github: "https://github.com/olivajames110/mern",
+      features: ["SCSS", "React JS"],
+      logos: [saas, react],
       group: "websites",
     },
     {
@@ -68,6 +79,8 @@ export const projectData = {
         "nd Firebase for hosting.",
       url: "https://tru-circle.web.app/",
       github: "https://github.com/olivajames110/mern",
+      features: ["SCSS", "React JS"],
+      logos: [saas, react],
       group: "websites",
     },
   ],
@@ -84,6 +97,8 @@ export const projectData = {
         "nd Firebase for hosting.",
       url: "https://olivajames110.github.io/online-ordering-price-comparison/",
       github: "https://github.com/olivajames110/mern",
+      features: ["SCSS", "React JS"],
+      logos: [saas, react],
       group: "projectsforpeople",
     },
     {
@@ -98,6 +113,8 @@ export const projectData = {
         "nd Firebase for hosting.",
       url: "https://olivajames110.github.io/fip-calculator/",
       github: "https://github.com/olivajames110/mern",
+      features: ["SCSS", "React JS"],
+      logos: [saas, react, xd],
       group: "projectsforpeople",
     },
     {
@@ -110,11 +127,13 @@ export const projectData = {
         "nd Firebase for hosting.",
       url: "https://waypoint-oz-dashboard.web.app/",
       github: "https://github.com/olivajames110/mern",
+      features: ["SCSS", "React JS"],
+      logos: [saas, react, xd],
       group: "projectsforpeople",
     },
     {
-      image: ooSuccess,
-      title: "Success Story Map",
+      image: rewards,
+      title: "Catpurrccinos Rewards",
       description:
         "Displays a list of Ordereze Online Ordering success examples on the map as well " +
         "as on cards. Map accounts for multilocation businesses. Built for the Ordereze s" +
@@ -122,8 +141,10 @@ export const projectData = {
       technology:
         "Single-page application built using Create React App utilizing React JS, SCSS, a" +
         "nd Firebase for hosting.",
-      url: "https://oo-success-examples.web.app/",
+      url: "https://catpurrccinos-rewards.web.app/",
       github: "https://github.com/olivajames110/mern",
+      features: ["SASS", "React JS"],
+      logos: [saas, react, mongo, mongoose],
       group: "projectsforpeople",
     },
     {
@@ -142,6 +163,8 @@ export const projectData = {
 
       url: "https://olivajames110.github.io/cattery",
       github: "https://github.com/olivajames110/mern",
+      features: ["SCSS", "React JS", "Socket.io", "MongoDB", "Mongoose"],
+      logos: [saas, react, node, express, mongo, mongoose],
       group: "projectsforpeople",
     },
     {
@@ -155,6 +178,8 @@ export const projectData = {
 
       url: "https://digitalmarketing.blob.core.windows.net/8981/files/lanova.html",
       github: "https://github.com/olivajames110/mern",
+      features: ["HTML 5", "SCSS", "Vanilla JS"],
+      logos: [html, css, js],
       group: "projectsforpeople",
     },
     {
@@ -168,6 +193,8 @@ export const projectData = {
 
       url: "https://digitalmarketing.blob.core.windows.net/8981/files/itc.html",
       github: "https://github.com/olivajames110/mern",
+      features: ["HTML 5", "SCSS", "Vanilla JS"],
+      logos: [html, css, js],
       group: "projectsforpeople",
     },
 
@@ -182,6 +209,8 @@ export const projectData = {
 
       url: "https://digitalmarketing.blob.core.windows.net/8981/files/wheelSpin.html",
       github: "https://github.com/olivajames110/mern",
+      features: ["HTML 5", "SCSS", "Vanilla JS"],
+      logos: [html, css, js],
       group: "projectsforpeople",
     },
     {
@@ -195,6 +224,8 @@ export const projectData = {
 
       url: "https://domain-lookup.ordereze.com/",
       github: "https://github.com/olivajames110/mern",
+      features: ["SCSS", "React JS", "Material UI"],
+      logos: [saas, react, mui],
       group: "projectsforpeople",
     },
     {
@@ -208,6 +239,8 @@ export const projectData = {
 
       url: "https://digitalmarketing.blob.core.windows.net/8981/files/uncleSharkiiMap.html",
       github: "https://github.com/olivajames110/mern",
+      features: ["HTML 5", "SCSS", "Vanilla JS", "AJAX"],
+      logos: [html, css, js],
       group: "projectsforpeople",
     },
     {
@@ -221,6 +254,8 @@ export const projectData = {
 
       url: "https://domain-lookup.ordereze.com/",
       github: "https://github.com/olivajames110/mern",
+      features: ["SCSS", "React JS", "Material UI"],
+      logos: [saas, react, mui],
       group: "projectsforpeople",
     },
   ],
@@ -233,6 +268,16 @@ export const projectData = {
       technology: "HTML, CSS, Typescript, Socket.io, Reddis, Redux, Discord.js",
       url: "https://fuku.tv/",
       github: "https://github.com/olivajames110",
+      logos: [saas, typescript, redux, node, redis, socket, discord],
+      features: [
+        "SCSS",
+        "React JS",
+        "Typescript",
+        "Socket.io",
+        "Reddis",
+        "Redux",
+        "Discord JS",
+      ],
       group: "forfun",
       isFeatured: true,
     },
@@ -245,6 +290,8 @@ export const projectData = {
         "nd Firebase for hosting.",
       url: "https://baseballcard-builder.web.app/",
       github: "https://github.com/olivajames110/mern",
+      features: ["SCSS", "React JS"],
+      logos: [saas, react],
       group: "forfun",
     },
   ],

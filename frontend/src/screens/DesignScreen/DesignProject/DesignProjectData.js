@@ -7,6 +7,10 @@ import hoopdreamsLogo from "../../../shared/images/projectThumbnails/design/hoop
 import hoopdreamsFlyer from "../../../shared/images/projectThumbnails/design/hoopdreams-flyer.jpg";
 import bbalCard from "../../../shared/images/projectThumbnails/design/bball-card.jpg";
 
+import xd from "../../../shared/logos/xd.png";
+import ps from "../../../shared/logos/photoshop.png";
+import ai from "../../../shared/logos/illustrator.png";
+
 export const designProjectData = [
   {
     image: catman,
@@ -15,7 +19,7 @@ export const designProjectData = [
     description:
       "Entire website built and managed for a Full-service Digital Marketing & Website " +
       "company tailored for Restaurants and small businesses. ",
-    technology: "Adobe Illustrator",
+    logos: [ai],
   },
   {
     image: breakingBad,
@@ -24,7 +28,7 @@ export const designProjectData = [
     description:
       "Entire website built and managed for a Full-service Digital Marketing & Website " +
       "company tailored for Restaurants and small businesses. ",
-    technology: "Adobe Illustrator",
+    logos: [ai],
   },
   {
     image: rugcats,
@@ -33,7 +37,7 @@ export const designProjectData = [
     description:
       "Entire website built and managed for a Full-service Digital Marketing & Website " +
       "company tailored for Restaurants and small businesses. ",
-    technology: "Adobe Illustrator",
+    logos: [ai],
   },
   {
     image: catpurrccinos,
@@ -42,7 +46,7 @@ export const designProjectData = [
     description:
       "Entire website built and managed for a Full-service Digital Marketing & Website " +
       "company tailored for Restaurants and small businesses. ",
-    technology: "Adobe Illustrator",
+    logos: [ai],
   },
   {
     image: eoy,
@@ -51,7 +55,7 @@ export const designProjectData = [
     description:
       "Entire website built and managed for a Full-service Digital Marketing & Website " +
       "company tailored for Restaurants and small businesses. ",
-    technology: "Adobe Photoshop",
+    logos: [ps, ai],
   },
   {
     image: hoopdreamsLogo,
@@ -60,7 +64,7 @@ export const designProjectData = [
     description:
       "Entire website built and managed for a Full-service Digital Marketing & Website " +
       "company tailored for Restaurants and small businesses. ",
-    technology: "Adobe Illustrator",
+    logos: [ai, ps, xd],
   },
   {
     image: hoopdreamsFlyer,
@@ -69,7 +73,7 @@ export const designProjectData = [
     description:
       "Entire website built and managed for a Full-service Digital Marketing & Website " +
       "company tailored for Restaurants and small businesses. ",
-    technology: "Adobe Photoshop, Adobe XD",
+    logos: [ps],
   },
   {
     image: bbalCard,
@@ -78,6 +82,6 @@ export const designProjectData = [
     description:
       "Entire website built and managed for a Full-service Digital Marketing & Website " +
       "company tailored for Restaurants and small businesses. ",
-    technology: "Adobe Photoshop, Adobe Illustrator",
+    logos: [ai],
   },
 ];

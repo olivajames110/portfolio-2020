@@ -32,6 +32,7 @@ const DesignScreen = () => {
               description={p.description}
               technology={p.technology}
               inverse={i % 2 == 0 ? false : true}
+              logos={p.logos}
             />
           ))}
         </section>

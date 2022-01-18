@@ -74,7 +74,8 @@
 
   .modern-project__content {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.98);
+    background-color: #ffffff;
+    // background-color: rgba(255, 255, 255, 0.98);
     z-index: 111;
     display: flex;
     justify-content: center;
@@ -130,7 +131,30 @@
       }
       .content-container {
         margin-top: 80px;
-
+        .logo-container {
+          display: flex;
+          flex-wrap: wrap;
+          // margin-top: 12px;
+          .logo-wrapper {
+            position: relative;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* width: 100%; */
+            margin-top: 20px;
+            margin-bottom: 5px;
+            margin-right: 40px;
+            /* max-width: 160px; */
+            /* flex-wrap: wrap; */
+            height: 32px;
+            img {
+              width: auto;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+        }
         h3 {
           font-size: 14px;
           font-weight: bold;
@@ -138,6 +162,7 @@
         }
       }
     }
+
     .grid-3 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
