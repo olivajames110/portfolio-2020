@@ -8,7 +8,7 @@ header {
           box-shadow: var(--boxShadow);
   z-index: 1111;
   height: var(--headerHeight);
-  background: #ffffffe7;
+  background: #fffffff7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

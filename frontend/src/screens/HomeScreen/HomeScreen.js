@@ -1,10 +1,12 @@
 import React from "react";
 import Main from "../../shared/components/UIElements/Main/Main";
 import "./HomeScreen.css";
-// import ParticleBackground from './backgrounds/ParticleBackground.js';
+
+import ParticleBackground from "./backgrounds/ParticleBackground.js";
 import { ReactComponent as Arrow } from "../../shared/icons/long-arrow-right.svg";
 import { ReactComponent as Chevron } from "../../shared/icons/chevron-right.svg";
 import JimmySVG from "../../shared/svgs/jimmy";
+import ThreeBackground from "./threeBackground/threeBackground";
 
 const HomeScreen = () => {
   return (
@@ -21,7 +23,8 @@ const HomeScreen = () => {
             <Chevron />
           </a>
         </div>
-        {/* <ParticleBackground/> */}
+        <ThreeBackground />
+        <ParticleBackground />
       </div>
     </Main>
   );
