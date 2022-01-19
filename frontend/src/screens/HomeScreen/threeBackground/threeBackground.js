@@ -27,7 +27,7 @@ function Circle() {
       position={[1, 0, 0]}
     >
       {/* <torusGeometry args={[4, 0.2, 16, 100]} /> */}
-      <torusGeometry args={[4, 0.5, 20, 200]} />
+      <torusGeometry args={[5, 0.5, 20, 200]} />
       {/* <meshStandardMaterial color="#ff4a01" /> */}
       <pointsMaterial size={0.015} />
     </points>
