@@ -49,15 +49,6 @@ const ParticleBackground = (props) => {
 
   return (
     <div id="particle-background">
-      <div
-        onClick={() => setBackgroundSwitcherActive((p) => !p)}
-        className="background-switcher-container"
-      >
-        <div className="edit-background-button">
-          <Pencil />
-        </div>
-        {backgroundSwitcherActive && backgroundSwitcherOptions}
-      </div>
       <Particles params={backgroundType} />
     </div>
   );
