@@ -279,7 +279,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 16px;
+}
+
+.modal .modal__body .loading-spinner-container a {
+  text-decoration: underline;
+  font-size: 12px;
+  margin-top: 15px;
+  color: #0b5183;
+}
+
+.modal .modal__body .loading-spinner-container .loading-spinner__body {
+  font-size: 13px;
+  color: #333333;
 }
 
 .modal .modal__footer {

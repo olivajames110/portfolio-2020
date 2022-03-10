@@ -119,13 +119,13 @@
 
 .modern-project-item-container .modern-project__content .modern-project-inner-content h2 {
   letter-spacing: 2px;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.5em;
 }
 
 .modern-project-item-container .modern-project__content .modern-project-inner-content p.description {
   margin-top: 15px;
-  max-width: 440px;
+  max-width: 500px;
 }
 
 .modern-project-item-container .modern-project__content .modern-project-inner-content .content-container {

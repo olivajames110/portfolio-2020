@@ -47,8 +47,16 @@ const DevicePreviewOverlay = (props) => {
     <div className="loading-spinner-container">
       <LoadingSpinner />
       <div className="loading-spinner__body">
-        Retrieving project...one second please
+        Retrieving project...one second please.
       </div>
+      <a
+        className=""
+        href={project.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Click here to go directly to the project
+      </a>
     </div>
   );
 
