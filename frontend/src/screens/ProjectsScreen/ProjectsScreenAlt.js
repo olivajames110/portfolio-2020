@@ -30,12 +30,12 @@ const ProjectsScreenAlt = () => {
   useEffect(() => {
     let list = [];
 
-    Object.keys(projectData).map((project) => {
-      projectData[project].map((p) => list.push(p));
-    });
+    // Object.keys(projectData).map((project) => {
+    //   projectData[project].map((p) => list.push(p));
+    // });
 
-    let sortedList = sortAZ(list, "title");
-    setAllProjectList(sortedList);
+    // let sortedList = sortAZ(list, "title");
+    setAllProjectList(projectData);
   }, []);
 
   return (

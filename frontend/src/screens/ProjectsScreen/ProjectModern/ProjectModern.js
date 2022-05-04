@@ -8,6 +8,7 @@ import { ReactComponent as Brackets } from "../../../shared/icons/brackets.svg";
 import { ReactComponent as Star } from "../../../shared/icons/star-solid.svg";
 import { ReactComponent as Eye } from "../../../shared/icons/eye.svg";
 import { ReactComponent as Arrow } from "../../../shared/icons/arrow.svg";
+import ProjectTech from "./ProjectTech";
 // import Card from '../../../../../shared/components/UIElements/Card/Card';
 // import LoadingSpinner from
 // '../../../../../shared/components/UIElements/LoadingSpinner/LoadingSpinner';
@@ -110,12 +111,12 @@ const ProjectModern = (props) => {
         <h2>{props.title}</h2>
         <p className="description">{props.description}</p>
         <div className="content-container">
-          <h3>Features:</h3>
+          <h3>Application Technologies</h3>
           <div className="logo-container">
             {props.logos.map((f) => (
-              <div className="logo-wrapper">
-                <img src={f} />
-              </div>
+              <>
+                <ProjectTech name={f.name} icon={f.icon} />
+              </>
             ))}
           </div>
         </div>

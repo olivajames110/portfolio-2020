@@ -21,15 +21,15 @@ footer .curve svg path {
 }
 
 footer .inner-wrapper {
-  padding: 70px 15px;
+  padding: 25px 15px 15px;
   max-width: var(--pageMaxWidth);
   margin: 0 auto;
   position: relative;
 }
 
 footer .inner-wrapper h2 {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 14px;
   color: #494949;
 }
 
@@ -66,16 +66,15 @@ footer .inner-wrapper .icons-container .icon-wrapper a:hover {
   color: var(--darkGray);
 }
 
-footer .inner-wrapper .icons-container .icon-wrapper svg {
+footer .inner-wrapper .icons-container .icon-wrapper a svg {
   color: inherit;
-  width: 24px;
+  height: 28px;
   display: block;
 }
 
 footer #copyright {
-  background-color: #ebebeb;
   color: #242222;
-  padding: 25px;
+  padding: 8px;
   font-size: 12px;
 }
 /*# sourceMappingURL=Footer.css.map */

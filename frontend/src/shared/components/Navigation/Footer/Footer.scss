@@ -32,15 +32,15 @@ footer {
     }
   }
   .inner-wrapper {
-    padding: 70px 15px;
+    padding: 25px 15px 15px;
     max-width: var(--pageMaxWidth);
     margin: 0 auto;
     position: relative;
 
     h2 {
       // margin: 20px 0;
-      font-weight: 500;
-      font-size: 16px;
+      font-weight: 400;
+      font-size: 14px;
       color: #494949;
     }
     .icons-container {
@@ -65,19 +65,19 @@ footer {
             background-color: #ffffff;
             color: var(--darkGray);
           }
-        }
-        svg {
-          color: inherit;
-          width: 24px;
-          display: block;
+          svg {
+            color: inherit;
+            height: 28px;
+            display: block;
+          }
         }
       }
     }
   }
   #copyright {
-    background-color: #ebebeb;
+    // background-color: #ebebeb;
     color: #242222;
-    padding: 25px;
+    padding: 8px;
     font-size: 12px;
   }
 }

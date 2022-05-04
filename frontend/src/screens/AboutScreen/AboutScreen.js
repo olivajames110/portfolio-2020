@@ -17,20 +17,31 @@ const AboutScreen = () => {
               <h2>About Myself</h2>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                molestie, neque at efficitur molestie, ante turpis aliquam
-                libero, non congue massa dui et libero. Nulla viverra libero in
-                nibh semper, a cursus leo sodales.
+                Hello! My name is Jimmy Oliva and I'm a self-taught Front End
+                Developer located in Huntington, New York. I have a passion for
+                building that’s fueled by a goal to improve my skillset to the
+                highest level possible.
               </p>
               <p>
-                Fusce ultrices urna purus, sit amet dictum leo pretium vel.
-                Etiam tristique sapien ut nisi vestibulum viverra. Fusce
-                bibendum eros in felis condimentum fermentum. Mauris enim odio,
-                faucibus eget sodales facilisis, gravida tristique mi. Donec
-                finibus, metus ac erat elit vulputate mauris sollicitudin, a
-                convallis magna vestibulum. Proin finibus ante sed ultrices
-                fringilla. Donec enim urna, lacinia ut rhoncus ac, pulvinar in
-                nulla. Cras in sem ac erat accumsan efficitur.
+                I love to learn new things and consider myself a perfectionist,
+                leaving no stone unturned. I’m competitive by nature, which I
+                attribute to years of playing baseball growing up. As a kid, I
+                also discovered a love for building, whether it was with Legos
+                or creating a whole new world in Minecraft (both of which I
+                admittedly still love today). I always enjoyed the challenge of
+                creating something new that was superior to my previous build. I
+                find myself applying this same practice in my work today with
+                programming, and remain competitive with both myself and my
+                peers.
+              </p>
+              <p>
+                Standard vanilla HTML5, CSS3, and Javascript are my roots, but
+                I've fallen in love with primarily using React JS & Redux with
+                styled components and SASS. I’ve used standard backend
+                technologies such as Node JS/Express, MongoDB/Mongoose, and
+                Firestore in the past, and with the right guidance, I'm
+                confident that any technology thrown my way will be something I
+                can master!
               </p>
             </div>
           </div>

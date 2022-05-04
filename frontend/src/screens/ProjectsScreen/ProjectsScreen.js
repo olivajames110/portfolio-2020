@@ -28,12 +28,13 @@ const ProjectsScreen = () => {
   useEffect(() => {
     let list = [];
 
-    Object.keys(projectData).map((project) => {
-      projectData[project].map((p) => list.push(p));
-    });
+    // Object.keys(projectData).map((project) => {
+    //   projectData[project].map((p) => list.push(p));
+    // });
 
-    let sortedList = sortAZ(list, "title");
-    setAllProjectList(sortedList);
+    // let sortedList = sortAZ(list, "title");
+    // setAllProjectList(list);
+    setAllProjectList(projectData);
   }, []);
 
   const allProjects = (
@@ -108,7 +109,20 @@ const ProjectsScreen = () => {
           <h2>Other Projects</h2>
           <ProjectSwitcher setProjectGroup={setProjectGroup} />
           <div className="project-list-container">
-            {projectGroup === "all" ? allProjects : projectList}
+            {/* {projectGroup === "all" ? allProjects : projectList} */}
+            {allProjectList.map((p) => (
+              <Project
+                image={p.image}
+                title={p.title}
+                description={p.description}
+                technology={p.technology}
+                frameworks={p.frameworks}
+                url={p.url}
+                github={p.github}
+                isFeatured={p.isFeatured}
+                handleProjectPreview={handleProjectPreview}
+              />
+            ))}
           </div>
         </section>
       </Main>

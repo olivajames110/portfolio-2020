@@ -24,18 +24,22 @@ section#about .about-inner-wrapper {
 
 section#about .about-inner-wrapper .about__content {
   position: relative;
+  padding: 0 20px;
   -ms-flex-preferred-size: 500px;
       flex-basis: 500px;
 }
 
 section#about .about-inner-wrapper .about__content h2 {
-  font-size: 64px;
+  font-size: 54px;
   font-weight: bold;
   line-height: 1.4em;
 }
 
 section#about .about-inner-wrapper .about__content p {
-  margin: 20px 0;
+  margin: 26px 0;
+  font-size: 14px;
+  line-height: 1.6rem;
+  font-weight: 400;
 }
 
 section#about .about__graphic {
