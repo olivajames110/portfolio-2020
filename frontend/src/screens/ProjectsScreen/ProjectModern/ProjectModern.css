@@ -166,10 +166,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* width: 100%; */
-  padding: 40px 30px 40px 10px;
-  /* max-width: 160px; */
-  /* flex-wrap: wrap; */
+  padding: 40px 30px 40px 0px;
   height: 32px;
 }
 
@@ -177,7 +174,7 @@
   position: absolute;
   background-color: #000000a9;
   color: #fff;
-  padding: 1px 3px;
+  padding: 1px 5px;
   border-radius: 4px;
   top: -15px;
   width: -webkit-min-content;
@@ -204,6 +201,7 @@
 .modern-project-item-container .modern-project__content .modern-project-inner-content .content-container .logo-container .logo-wrapper svg {
   height: 48px;
   width: auto;
+  max-width: 100px;
   max-height: 48px;
 }
 
@@ -234,11 +232,11 @@
   }
   .modern-project-item-container .modern-project__content {
     position: relative;
-    margin-top: -10%;
-    padding: 3.5rem 1.4rem;
+    margin-top: -20%;
+    padding: 3.5rem 1.4rem 1rem;
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    width: 96%;
+    width: 94%;
   }
   .modern-project-item-container .modern-project__content .modern-project-inner-content h2 {
     font-size: 22px;

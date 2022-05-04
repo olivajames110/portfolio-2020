@@ -42,7 +42,6 @@ export const projectData = [
 
     url: "https://digital-business-card-builder.web.app/",
     github: "https://github.com/olivajames110/digital-business-card",
-    features: ["SCSS", "React JS"],
     logos: [
       { name: "React JS", icon: <ReactIcon /> },
       { name: "SASS", icon: <Sass /> },
@@ -50,7 +49,6 @@ export const projectData = [
       { name: "MUI", icon: <Mui /> },
       { name: "Firestore DB", icon: <Firebase /> },
     ],
-    group: "forfun",
   },
 
   {
@@ -58,7 +56,6 @@ export const projectData = [
     title: "Catpurrccinos Rewards",
     description:
       "Customer loyalty rewards program built for local Cat Cafe, Catpurrccinos. This iPad-focused app allows users to check in once every 24 hours by entering a phone number. Points can be redeemed for products or free visits in an in-app store. Management of all points, item redemptions, and visits are done with Firestore Realtime Database for efficient and low-latency interaction.",
-
     url: "https://catpurrccinos-rewards.web.app/",
     github:
       "https://github.com/olivajames110/catpurrccinos-rewards/tree/main/frontend",
@@ -70,13 +67,12 @@ export const projectData = [
       { name: "React Router", icon: <ReactRouter /> },
       { name: "Firebase", icon: <Firebase /> },
     ],
-    group: "projectsforpeople",
   },
   {
     image: waiver,
     title: "Catpurrccinos Safety Waiver",
     description:
-      "Customer liability waiver proof of concept for local Cat Cafe, Catpurrccinos. This form dynamically renders the appropriate number of participant cards dependent on the quantity of each age group. Dependent on the age group type, input validation is required for most fields. React-Redux is used for state management and uses Firebase Hosting deployment services.",
+      "Proof of concept of a customer liability waiver for local Cat Cafe, Catpurrccinos. This form dynamically renders the appropriate number of participant cards dependent on the quantity of each age group. Dependent on the age group type, input validation is required for most fields. React-Redux is used for state management and uses Firebase Hosting deployment services.",
     url: "https://catpurrccinos-waiver.web.app/",
     github: "https://github.com/olivajames110/catpurrccinos-waiver",
     features: ["SASS", "React JS"],
@@ -86,7 +82,6 @@ export const projectData = [
       { name: "Redux", icon: <Redux /> },
       { name: "Firebase", icon: <Firebase /> },
     ],
-    group: "projectsforpeople",
   },
 
   {
@@ -117,7 +112,7 @@ export const projectData = [
       "Redux",
       "Discord JS",
     ],
-    group: "forfun",
+
     isFeatured: true,
   },
 
@@ -145,7 +140,7 @@ export const projectData = [
       "Redux",
       "Discord JS",
     ],
-    group: "forfun",
+
     isFeatured: true,
   },
   {
@@ -166,7 +161,6 @@ export const projectData = [
       { name: "Express JS", icon: <Express /> },
       { name: "MongoDB & Mongoose", icon: <Mongo /> },
     ],
-    group: "projectsforpeople",
   },
   {
     image: fipCalc,
@@ -176,12 +170,10 @@ export const projectData = [
 
     url: "https://olivajames110.github.io/fip-calculator/",
     github: "https://github.com/olivajames110/fip-calculator",
-    features: ["SCSS", "React JS"],
     logos: [
       { name: "React JS", icon: <ReactIcon /> },
       { name: "SASS", icon: <Sass /> },
     ],
-    group: "projectsforpeople",
   },
   {
     image: domainLookup,
@@ -190,15 +182,14 @@ export const projectData = [
       "A query tool built for Ordereze, a restaurant web design company. Allows employees to search and display a business's WHOIS, DNS, and Registrar information all in one place.",
 
     url: "https://domain-lookup.ordereze.com/",
-    github: "https://github.com/olivajames110/mern",
+    github: "https://github.com/olivajames110/domain-lookup",
     features: ["SCSS", "React JS", "Material UI"],
     logos: [
-      { name: "React JS", icon: <ReactIcon /> },
+      { name: "React JS", icon: <Typescript /> },
       { name: "SASS", icon: <Sass /> },
       { name: "Redux", icon: <Redux /> },
       { name: "MUI", icon: <Mui /> },
     ],
-    group: "projectsforpeople",
   },
   {
     image: baseballCardBuilder,
@@ -208,12 +199,10 @@ export const projectData = [
 
     url: "https://baseballcard-builder.web.app/",
     github: "https://github.com/olivajames110/baseball-card-builder",
-    features: ["SCSS", "React JS"],
     logos: [
       { name: "React JS", icon: <ReactIcon /> },
       { name: "SASS", icon: <Sass /> },
     ],
-    group: "forfun",
   },
   {
     image: ooComparison,
@@ -222,13 +211,11 @@ export const projectData = [
       "Price calculator that dynamically compares the prices of different online ordering companies, and shows the savings Ordereze Online Ordering can yield. Built for the Ordereze sales team.",
 
     url: "https://olivajames110.github.io/online-ordering-price-comparison/",
-    github: "https://github.com/olivajames110/mern",
-    features: ["SCSS", "React JS"],
+    github: "https://github.com/olivajames110/online-ordering-price-comparison",
     logos: [
       { name: "React JS", icon: <ReactIcon /> },
       { name: "SASS", icon: <Sass /> },
     ],
-    group: "projectsforpeople",
   },
   {
     image: truCircle,
@@ -236,13 +223,11 @@ export const projectData = [
     description:
       "A simple single-page application of a homepage built for a business dedicated to increasing accessibility of finding mental health help online or in person.",
     url: "https://tru-circle.web.app/",
-    github: "https://github.com/olivajames110/mern",
-    features: ["SCSS", "React JS"],
+    github: "https://github.com/olivajames110/",
     logos: [
       { name: "React JS", icon: <ReactIcon /> },
       { name: "SASS", icon: <Sass /> },
     ],
-    group: "websites",
   },
 
   {
@@ -252,14 +237,13 @@ export const projectData = [
       "Custom responsive timeline built for La Nova Pizzeria in Buffalo, NY. They are the official pizza partners of the Buffalo Bills, Buffalo Sabres, and Buffalo Bisons. Due to the software limitations of the website, this project was required to be built purely with HTML, CSS, and Vanilla Javascript.",
 
     url: "https://digitalmarketing.blob.core.windows.net/8981/files/lanova.html",
-    github: "https://github.com/olivajames110/mern",
+    github: "https://github.com/olivajames110/la-nova",
     features: ["HTML 5", "SCSS", "Vanilla JS"],
     logos: [
       { name: "HTML5", icon: <Html /> },
       { name: "CSS3", icon: <Css /> },
       { name: "Vanilla JS", icon: <Js /> },
     ],
-    group: "projectsforpeople",
   },
   {
     image: sharkii,
@@ -268,13 +252,12 @@ export const projectData = [
       "An interactive map of business locations for Poke restaurant Uncle Sharkii. The map dynamically renders the populated US states as a result of a JSON object fetched on page load. Due to software limitations of the website, this was required to be built purely with HTML, CSS, and Vanilla Javascript.",
 
     url: "https://digitalmarketing.blob.core.windows.net/8981/files/uncleSharkiiMap.html",
-    github: "https://github.com/olivajames110/mern",
+    github: "https://github.com/olivajames110/uncle-sharkii-map",
     features: ["HTML 5", "SCSS", "Vanilla JS", "AJAX"],
     logos: [
       { name: "HTML5", icon: <Html /> },
       { name: "CSS3", icon: <Css /> },
       { name: "Vanilla JS", icon: <Js /> },
     ],
-    group: "projectsforpeople",
   },
 ];
