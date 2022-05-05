@@ -7,7 +7,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 80%;
-  height: 90vh;
+  height: 85vh;
   border-radius: 5px;
   overflow: hidden;
   -webkit-transition: 480ms ease;
@@ -70,15 +70,18 @@
 }
 
 .modal .modal__header {
+  position: absolute;
   width: 100%;
-  padding: 0.3rem 0.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#f7f6f5), to(#f1f1f1));
-  background: linear-gradient(0, #f7f6f5, #f1f1f1);
+  padding: 0.2rem 0.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f6f5e8), to(#f1f1f1b8));
+  background: linear-gradient(#f7f6f5e8, #f1f1f1b8);
   color: black;
-  position: relative;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 36px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -115,6 +118,8 @@
 .modal .modal__header .three-btn-container .btn-circle {
   width: 15px;
   height: 15px;
+  -webkit-transition: 100ms;
+  transition: 100ms;
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
@@ -123,6 +128,10 @@
 .modal .modal__header .three-btn-container .close {
   background-color: #ff6054;
   border: 1px solid #f15956;
+}
+
+.modal .modal__header .three-btn-container .close:hover {
+  background-color: #f74c40;
 }
 
 .modal .modal__header .three-btn-container .middle {
@@ -136,6 +145,10 @@
 .modal .modal__header .three-btn-container .expand {
   background-color: #17cb38;
   border: 1px solid #2bbb53;
+}
+
+.modal .modal__header .three-btn-container .expand:hover {
+  background-color: #22b24b;
 }
 
 .modal .modal__header .device-switcher-container {
@@ -153,64 +166,53 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 10px;
+  margin: 0 2px;
+  padding: 1px 3px;
   position: relative;
+  border-radius: 4px;
+}
+
+.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper svg {
+  height: 28px;
+  width: 28px;
 }
 
 .modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active {
   position: relative;
+  background-color: #002d722b;
 }
 
 .modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg {
-  color: var(--blueText);
-  fill: var(--blueText);
-  stroke: var(--blueText) !important;
+  stroke: var(--blueText);
 }
 
 .modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg rect,
 .modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg circle,
 .modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active svg path {
-  fill: var(--blueText) !important;
-  stroke: var(--blueText) !important;
-  stroke: var(--blueText) !important;
-}
-
-.modal .modal__header .device-switcher-container .device-switcher__icon-wrapper.icon-active:after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  background-color: var(--blueText);
-  width: 100%;
-  height: 2px;
-  left: 0;
+  fill: inherit;
+  stroke: inherit;
+  stroke: inherit;
 }
 
 .modal .title-container {
   text-align: center;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .modal .title-container h3 {
-  font-weight: bold;
-  font-size: 14px !important;
+  font-weight: 500;
+  font-size: 13px !important;
   color: #2c2c2c;
 }
 
@@ -243,9 +245,9 @@
 
 .modal .modal__body {
   position: relative;
-  min-height: 76vh;
   height: 100%;
   -webkit-overflow-scrolling: touch;
+  padding-top: 20px;
 }
 
 .modal .modal__body iframe {
@@ -253,9 +255,8 @@
   height: 100%;
   border: none;
   position: absolute;
-  top: 0;
+  top: 35px;
   left: 0;
-  padding-bottom: 60px;
 }
 
 .modal .modal__body .loading-spinner-container {
