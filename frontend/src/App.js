@@ -1,6 +1,6 @@
 import React from "react";
 import HomeScreen from "./screens/HomeScreen/HomeScreen";
-import ContactScreen from "./screens/ContactScreen/ContactScreen";
+
 import AboutScreen from "./screens/AboutScreen/AboutScreen";
 import DesignScreen from "./screens/DesignScreen/DesignScreen";
 import ProjectsScreenAlt from "./screens/ProjectsScreen/ProjectsScreenAlt";
@@ -13,6 +13,7 @@ import {
   Switch,
 } from "react-router-dom";
 import ScrollToTop from "./shared/components/Navigation/ScrollToTop";
+import ResumeScreen from "./screens/ContactScreen/ResumeScreen";
 
 const App = () => {
   let routes = (
@@ -28,6 +29,9 @@ const App = () => {
       </Route>
       <Route path="/design" exact>
         <DesignScreen />
+      </Route>
+      <Route path="/resume" exact>
+        <ResumeScreen />
       </Route>
 
       <Redirect to="/" />

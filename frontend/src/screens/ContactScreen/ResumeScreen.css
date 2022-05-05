@@ -1,0 +1,55 @@
+main.resume {
+  background: #fafafa;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+main.resume .resume-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 15px;
+  width: 100%;
+}
+
+main.resume .resume-wrapper canvas {
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.095);
+          box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.095);
+  width: 100% !important;
+  height: auto !important;
+}
+
+main.resume .download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 180px;
+  background: var(--blueText);
+  color: #ffffff;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+main.resume .download .icon-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 8px;
+}
+
+main.resume .download .icon-wrapper svg {
+  height: 14px;
+  fill: #ffffff;
+}
+/*# sourceMappingURL=ResumeScreen.css.map */

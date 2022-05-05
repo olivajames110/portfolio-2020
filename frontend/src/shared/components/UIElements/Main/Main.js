@@ -5,7 +5,7 @@ const Main = (props) => {
     maxWidth: props.full ? "initial" : " var(--pageMaxWidth)",
   };
   return (
-    <main id="down">
+    <main id="down" className={props.className}>
       <div style={styles} className="main-wrapper">
         {props.children}
       </div>
