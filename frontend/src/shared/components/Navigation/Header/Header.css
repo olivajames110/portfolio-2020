@@ -6,7 +6,7 @@ header {
   padding: 1em;
   -webkit-box-shadow: var(--boxShadow);
           box-shadow: var(--boxShadow);
-  z-index: 1111;
+  z-index: 111111111111;
   height: var(--headerHeight);
   background: #fffffff7;
   display: -webkit-box;
