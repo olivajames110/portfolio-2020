@@ -14,9 +14,9 @@ const NavLinksList = (props) => {
       <li onCLick={props.closeDrawer} className="nav-item-wrapper">
         <NavLinkItem to="/design" text="Design Work" />
       </li>
-      <li onCLick={props.closeDrawer} className="nav-item-wrapper">
+      {/* <li onCLick={props.closeDrawer} className="nav-item-wrapper">
         <NavLinkItem to="/resume" text="Resume" />
-      </li>
+      </li> */}
     </ul>
   );
 };
