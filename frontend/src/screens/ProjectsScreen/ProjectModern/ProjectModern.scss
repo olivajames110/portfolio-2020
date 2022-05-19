@@ -201,7 +201,38 @@
     }
   }
 }
+.preview-overlay {
+  background-color: rgba(0, 0, 0, 0.345);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(3px);
 
+  svg {
+    display: block;
+    width: 80px;
+    height: 64px;
+    fill: #ffffff;
+    path {
+      stroke: #ffffff !important;
+    }
+    circle {
+      stroke: #ffffff !important;
+    }
+  }
+
+  span {
+    color: #ffffff;
+    text-shadow: 0 0 6px #000000a1;
+  }
+}
 @media only screen and (max-width: 650px) {
   .modern-project-item-container {
     flex-direction: column;

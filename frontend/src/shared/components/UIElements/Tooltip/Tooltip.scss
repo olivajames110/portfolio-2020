@@ -1,0 +1,34 @@
+.tooltip-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .tooltip {
+    position: absolute;
+    background-color: #000000a9;
+    color: #fff;
+    padding: 1px 5px;
+    border-radius: 4px;
+    top: -35px;
+    width: min-content;
+    white-space: nowrap;
+    // box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.137);
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 50%;
+      bottom: -9px;
+      transform: translateX(-50%);
+
+      border-width: 5px;
+      border-style: solid;
+
+      border-color: #000000a9 transparent transparent transparent;
+    }
+  }
+}
