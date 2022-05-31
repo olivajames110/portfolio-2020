@@ -116,33 +116,33 @@ export const projectData = [
     isFeatured: true,
   },
 
-  {
-    image: flatIron,
-    title: "Winning Bid Funding",
-    description:
-      "Single page application built as a proof of concept for a new company called Winning Bid Funding, a child company of Flat Iron Funding. This multi-step form has input validation and offers a dynamic data trigger-based email upon form completion. Form state is managed by React-Redux and uses Firebase Hosting deployment services.",
-    url: "https://winning-bid-funding.web.app/",
-    github: "https://github.com/olivajames110/winning-bid-funding",
-    logos: [
-      { name: "React JS", icon: <ReactIcon /> },
-      { name: "SASS", icon: <Sass /> },
-      { name: "Redux", icon: <Redux /> },
-      { name: "Google Places", icon: <GooglePlaces /> },
-      { name: "Firebase", icon: <Firebase /> },
-      { name: "Email JS", icon: <Email /> },
-    ],
-    features: [
-      "SCSS",
-      "React JS",
-      "Typescript",
-      "Socket.io",
-      "Reddis",
-      "Redux",
-      "Discord JS",
-    ],
+  // {
+  //   image: flatIron,
+  //   title: "Winning Bid Funding",
+  //   description:
+  //     "Single page application built as a proof of concept for a new company called Winning Bid Funding, a child company of Flat Iron Funding. This multi-step form has input validation and offers a dynamic data trigger-based email upon form completion. Form state is managed by React-Redux and uses Firebase Hosting deployment services.",
+  //   url: "https://winning-bid-funding.web.app/",
+  //   github: "https://github.com/olivajames110/winning-bid-funding",
+  //   logos: [
+  //     { name: "React JS", icon: <ReactIcon /> },
+  //     { name: "SASS", icon: <Sass /> },
+  //     { name: "Redux", icon: <Redux /> },
+  //     { name: "Google Places", icon: <GooglePlaces /> },
+  //     { name: "Firebase", icon: <Firebase /> },
+  //     { name: "Email JS", icon: <Email /> },
+  //   ],
+  //   features: [
+  //     "SCSS",
+  //     "React JS",
+  //     "Typescript",
+  //     "Socket.io",
+  //     "Reddis",
+  //     "Redux",
+  //     "Discord JS",
+  //   ],
 
-    isFeatured: true,
-  },
+  //   isFeatured: true,
+  // },
   {
     image: cattery,
     title: "Cattery Occupancy Manager",
